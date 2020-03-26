@@ -5,6 +5,10 @@
 + [py-qrcode](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-qrcode) ：用 Python 生成炫酷二维码及解析
 
 
+---
+
+从小白到工程师的学习之路
+
 关注公众号：python 技术，回复"python"一起学习交流
 
 ![](http://favorites.ren/assets/images/python.jpg)
