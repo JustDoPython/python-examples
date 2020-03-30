@@ -1,7 +1,7 @@
 # Python 代码实例
 
-+ [py-mouse](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/2020-02-24-feiyan_data) ：肺炎数据抓取并展示
-+ [py-anjia](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/2020-03-24-cherry_tree) ：Python 樱花小技
++ [feiyan_data](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/2020-02-24-feiyan_data) ：肺炎数据抓取并展示
++ [cherry_tree](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/2020-03-24-cherry_tree) ：Python 樱花小技
 
 
 ---
