@@ -2,7 +2,7 @@
 
 Python技术 公众号文章代码库
 
-+ [douban-movie-top250](https://github.com/JustDoPython/python-examples/tree/master/doudou/douban-movie-top250)：实战｜数据分析篇之豆瓣电影 TOP250 示例代码
++ [douban-movie-top250](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-02-20-douban-movie-top250)：实战｜数据分析篇之豆瓣电影 TOP250 示例代码
 
 + [duo-la-a-meng](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-duo-la-a-meng)：用 Python 画哆啦 A 梦
 
