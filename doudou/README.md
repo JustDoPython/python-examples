@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 + [fund-fixed-investment](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-found)：指数基金定投到底能不能赚钱？Python 来告诉你答案
 
 + [pyecharts](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-pyechars)：Python 图表利器 pyecharts
+
++ [greedy-snake](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-04-04-greedy-snake)：贪吃蛇
 ---
 
 从小白到工程师的学习之路。
