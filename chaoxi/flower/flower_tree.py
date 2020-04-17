@@ -3,6 +3,7 @@ import random
 
 def cherryTree(branch, t):
     if branch > 4:
+        # 枝干数
         if 7 <= branch <= 13:
             # 随机数生成
             if random.randint(0, 3) == 0:
@@ -15,8 +16,8 @@ def cherryTree(branch, t):
             if random.randint(0, 2) == 0:
                 t.color('snow')
             else:
-                # 设置樱花树叶颜色
-                t.color('green')  # 樱花树颜色
+                # 设置树叶颜色
+                t.color('green')
             t.pensize(branch / 5)
         else:
             t.color('Peru')  # 树干颜色
@@ -63,17 +64,17 @@ def petal(m, t):
 def des_word():
     t.color('LightCoral') # 字体颜色设置
     t.hideturtle()
-    t.goto(-50,-130)
+  #  t.goto(-50, -130)
+    t.goto(-60,-170)
     t.pu()
-    # 昨日雪如花，今日花如雪，山樱如美人，红颜易消歇。
-    t.write('昨日雪如花,',move=False, align='center', font=('Arial', 20, 'normal'))
+    t.write('姹紫嫣红桃花笺,',move=False, align='center', font=('Arial', 20, 'normal'))
     t.pd()
 
     t.pu()
-    t.goto(90,-130)
-    t.write('今日花如雪', move=False, align='center', font=('Arial', 20, 'normal'))
+    #  t.goto(90, 130)
+    t.goto(150,-170)
+    t.write('繁花似锦为君妍', move=False, align='center', font=('Arial', 20, 'normal'))
     t.pd()
-
 
 # 绘图区域
 t = turtle.Turtle()

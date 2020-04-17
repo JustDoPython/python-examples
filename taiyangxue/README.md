@@ -2,6 +2,8 @@
 
 - [timefriend](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/timefriend) ：做时间的朋友 —— 用印象笔记打造时间记录工具
 - [pythondocx](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythondocx) ：Word 神器 python-docx
+- [pythonexcel](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythonxlsx) ：Excel 神器 OpenPyXl
+- [recursion](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/recursion) ：不会编程的程序员不用懂递归
 
 ---
 

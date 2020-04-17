@@ -252,4 +252,4 @@ class LgCrawler(object):
                                  .render("拉勾融资.html")
         )
 if __name__ == '__main__':
-    LgCrawler().field()
+    LgCrawler().crawler()
