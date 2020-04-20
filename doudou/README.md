@@ -11,6 +11,8 @@ Python技术 公众号文章代码库
 + [pyecharts](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-pyechars)：Python 图表利器 pyecharts
 
 + [greedy-snake](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-04-04-greedy-snake)：贪吃蛇
+
++ [epidemic-big-screen](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-04-20-epidemic-big-screen)：疫情数据大屏
 ---
 
 从小白到工程师的学习之路。
@@ -18,4 +20,3 @@ Python技术 公众号文章代码库
 关注公众号：python 技术，回复"python"一起学习交流。
 
 ![](http://favorites.ren/assets/images/python.jpg)
-

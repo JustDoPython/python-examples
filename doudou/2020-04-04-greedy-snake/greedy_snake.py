@@ -154,7 +154,7 @@ def run():
             # 按 origin_direction 方向运动
             snake_body.insert(0, list(snake_head))
             # 吃到食物后重新生成
-            if snake_head[0] == food_position[0] and snake_head[1] == food_position[1]:
+            if snake_head == food_position:
                 food_position = create_food()
                 current_score += score
             else:
@@ -174,7 +174,7 @@ def run():
         # 更新分数
         display_message(f"{current_score}/{max_score}", text_color, 30, (pixel * 2, pixel * 2))
         if is_dead:
-            display_message(f"Game Over", text_color, 50, (pixel * 16, pixel * 15))
+            display_message("Game Over", text_color, 50, (pixel * 16, pixel * 15))
         # 控制游戏速度
         time_clock.tick(speed)
 

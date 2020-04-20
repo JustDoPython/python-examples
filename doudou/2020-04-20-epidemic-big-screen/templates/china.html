@@ -1,0 +1,540 @@
+<html>
+<head>
+    <title>全球新型冠状病毒肺炎疫情分布</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+
+
+    <style>
+        body {
+            background: url("static/bg.jpeg") no-repeat;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            color: #FFFFFF;
+        }
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            background-color: #021525;
+            color: #FFFFFF;
+            overflow: hidden;
+            margin-left: 0px
+        }
+
+        #titleContainer {
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            display: inline;
+            margin-left: 10px;
+        }
+
+        #textContainer {
+            height: 50px;
+            line-height: 50px;
+            font-size: 10px;
+            display: inline;
+            float: right;
+            margin-right: 10px;
+        }
+
+        #text, #text2 {
+            display: block;
+            line-height: 25px;
+        }
+
+        #text2 {
+            float: right;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: #FFFFFF
+        }
+
+        #rightPanel {
+            position: fixed;
+            width: 20%;
+            height: 100%;
+            right: 0;
+            top: 50px;
+            z-index: 2;
+            padding-top: 7px;
+            padding-left: 7px;
+            background-color: rgba(1, 6, 17, 0.6);
+        }
+
+        #leftPanel {
+            position: fixed;
+            width: 25%;
+            height: 91%;
+            left: 0;
+            top: 50px;
+            z-index: 2;
+            background-color: rgba(1, 6, 17, 0.6);
+        }
+
+        #centerPanel {
+            background-color: rgba(1, 6, 17, 0.6);
+            z-index: 2;
+        }
+
+        .rightTitleContainer {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+
+        #{rightTitle-en:float:left}
+
+        #quezhenContainer, #zhiyuContainer, #siwangContainer {
+            float: left;
+            text-align: center;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        #quezhenNum, #zhiyuNum, #siwangNum {
+            display: block;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        #quezhenNum {
+            color: #f23a3b;
+        }
+
+        #zhiyuNum {
+            color: #178b50;
+        }
+
+        #siwangNum {
+            color: #4e5a65;
+        }
+
+        .rightTitleContainerB {
+            z-index: 300;
+            position: fixed;
+        }
+
+        blockquote {
+            padding: 0px 5px;
+            margin: 0 0;
+            font-size: 10px;
+            border-left: 5px solid #1C86EE;
+        }
+
+
+        .newsList {
+            padding-left: 20px;
+        }
+
+        .time {
+            color: #666;
+        }
+
+        .title, .media {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 10px;
+        }
+
+        table {
+            margin: 0px 5px 0px 10px;
+            font-size: 10px
+        }
+
+        #news::-webkit-scrollbar, #table::-webkit-scrollbar {
+            display: none; /*隐藏滚动条*/
+        }
+
+        #centerHeader {
+            left: 450px;
+            position: absolute;
+            top: 85px;
+        }
+
+        .nowConfirm, .confirm, .heal, .dead {
+            float: left;
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 40px;
+        }
+
+        .nowConfirm .number, .confirm .number, .heal .number, .dead .number {
+            font-size: 30px;
+        }
+
+        .nowConfirm .text, .confirm .text, .heal .text, .dead .text {
+            font-size: 20px;
+        }
+
+        .nowConfirm .number {
+            color: #f23a3b;
+        }
+
+        .confirm .number {
+            color: #cc1e1e;
+        }
+
+        .heal .number {
+            color: #178b50;
+        }
+
+        .dead .number {
+            color: #4e5a65;
+        }
+
+        #map {
+            left: 230px;
+            top: 150px;
+            width: 1000px;
+            height: 550px;
+            position: absolute;
+        }
+
+        .rightTitle-en {
+            color: #666;
+        }
+
+        .media {
+
+        }
+
+
+        .btn-group {
+            right: 290px;
+            height: 50px;
+            margin: 8px 0px;
+            position: absolute;
+        }
+
+        #toChina, #toGlobal {
+            background: rgba(32, 66, 82, 1);
+            color: white;
+            border: none;
+            width: 90px;
+        }
+
+        #toChina {
+            border-radius: 24px 0 0 24px;
+            background: rgba(43, 91, 104, 1);
+        }
+
+        #toGlobal {
+            border-radius: 0 24px 24px 0;
+        }
+
+
+    </style>
+</head>
+
+<body style="overflow-y: hidden">
+<div class="row nav">
+    <div id="titleContainer">
+        <span>全球新型冠状病毒肺炎疫情分布 | </span>
+        <span id="date">{{ date['today'] }}</span>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" id="toChina">
+            中&nbsp;国
+        </button>
+        <button type="button" class="btn btn-default" id="toGlobal">
+            全&nbsp;球
+        </button>
+    </div>
+
+    <div id="textContainer">
+        <span id="text">数据来源：<a href="https://news.qq.com/zt2020/page/feiyan.htm#/global"
+                                target="_blank">腾讯｜新冠肺炎疫情最新动态</a></span>
+        <span id="text2">截至<span id="titleTime">&nbsp;{{ date['yesterday'] }}</span></span>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div id="leftPanel">
+        <div class="rightTitleContainerB">
+            <div class="rightTitleContainer">
+                <blockquote>
+                    <span class="rightTitle">当日新增概况</span>
+                    <br/>
+                    <span class="rightTitle-en"><span id="textTime1">{{ date['yesterday'] }}</span>0~24时</span>
+                </blockquote>
+            </div>
+            <div id="numPanel">
+                <div id="quezhenContainer">
+                    <span id="quezhenNum">{{ statistics_data['nowConfirmAdd'] }}</span>
+                    <span id="quezhenText">确诊</span>
+                </div>
+                <div id="zhiyuContainer">
+                    <span id="zhiyuNum">{{ statistics_data['healAdd'] }}</span>
+                    <span id="zhiyuText">治愈</span>
+                </div>
+                <div id="siwangContainer">
+                    <span id="siwangNum">{{ statistics_data['deadAdd'] }}</span>
+                    <span id="siwangText">死亡</span>
+                </div>
+            </div>
+        </div>
+        <div id="table" style="height:520px;overflow:auto;top:120px;position:absolute; overflow-x: hidden;">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th style="width:20%"><span>地区</span></th>
+                    <th>境外输入</th>
+                    <th>现有确诊</th>
+                    <th>累计确诊</th>
+                    <th>治愈</th>
+                    <th>死亡</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for country in country_data %}
+                <tr>
+                    {% for value in country %}
+                    <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div id="centerPanel">
+        <div id="centerHeader">
+            <div class="recentNumber add">
+                <div class="icbar nowConfirm"><p class="add">
+                    <div class="number">
+                        {{ statistics_data['nowConfirm'] }}
+                    </div>
+                    <div class="text">现有确诊</div>
+                </div>
+                <div class="icbar confirm"><p class="add">
+                    <div class="number">
+                        {{ statistics_data['confirm'] }}
+                    </div>
+                    <div class="text">累计确诊</div>
+                </div>
+                <div class="icbar heal"><p class="add">
+                    <div class="number">
+                        {{ statistics_data['heal'] }}
+                    </div>
+                    <div class="text">累计治愈</div>
+                </div>
+                <div class="icbar dead"><p class="add">
+                    <div class="number">
+                        {{ statistics_data['dead'] }}
+                    </div>
+                    <div class="text">累计死亡</div>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="chart-container"></div>
+    </div>
+
+    <div id="rightPanel">
+        <div id="top10" style="width: 300px;height:300px"></div>
+        <div id="news" style="height:320px;overflow:auto">
+            <ul class="newsList">
+                {% for article in article_data %}
+                <li>
+                    <div class="time"><span>{{ article[0] }}</span></div>
+                    <p class="title">
+                        <a href="{{ article[1] }}" target="_blank">{{ article[2] }}</a>
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+
+    var toGlobal = document.getElementById('toGlobal');
+    toGlobal.onmouseover = function () {
+        toGlobal.style.backgroundColor = "#021525";
+    }
+
+    toGlobal.onclick = function () {
+        window.location.href = 'http://127.0.0.1:5200/global';
+    }
+
+    toGlobal.onmouseout = function () {
+        toGlobal.style.backgroundColor = "#204252";
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    var top10 = echarts.init(document.getElementById('top10'));
+    var top10_result = $.ajax({type: "GET", url: 'http://127.0.0.1:5200/china_top10', data: null, async: false});
+    top10_result = JSON.parse(top10_result.responseText);
+
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '境外输入省市 TOP 10',
+            textStyle: {
+                color: '#FFFFFF'
+            }
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            show: true,
+            type: 'value',
+            axisLabel: {
+                rotate: 35,
+                color: '#FFFFFF',
+            },
+        },
+        yAxis: {
+            type: 'category',
+            data: top10_result.country,
+            axisLabel: {
+                color: '#FFFFFF',
+            },
+        },
+        series: [
+            {
+                name: '',
+                type: 'bar',
+                barWidth: 10,
+                data: top10_result.data
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    top10.setOption(option);
+
+</script>
+
+<script>
+
+    var map_result = $.ajax({type: "GET", url: 'http://127.0.0.1:5200/china_map', data: null, async: false});
+    map_result = JSON.parse(map_result.responseText);
+
+
+    var map = echarts.init(document.getElementById('map'));
+
+    var option = {
+        tooltip: {
+            "show": true,
+            "trigger": "item",
+            "formatter": function (params) {
+                console.info(params)
+                var res = params.name + '<br/>';
+                var myseries = option.series;
+                for (var i = 0; i < myseries.length; i++) {
+                    for (var j = 0; j < myseries[i].data.length; j++) {
+                        if (myseries[i].data[j].name == params.name) {
+                            res += myseries[i].name + ' : ' + myseries[i].data[j].value + '</br>';
+                        }
+                    }
+                }
+                return res;
+
+            },
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0
+        },
+        visualMap: {
+            show: false,
+            min: 0,
+            max: 2500,
+            left: 'right',
+            top: 'bottom',
+            text: ['高', '低'],           // 文本，默认为数值文本
+            calculable: false
+        },
+
+        series: [
+
+            {
+                name: '新增确诊',
+                type: 'map',
+                mapType: 'china',
+                zoom: 1.1, //当前视角的缩放比例
+                roam: true,
+                itemStyle: {
+                    emphasis: {label: {show: true}}
+                },
+                data: map_result.now_confirm
+            },
+            {
+                name: '累计确诊',
+                type: 'map',
+                mapType: 'china',
+                zoom: 1.1, //当前视角的缩放比例
+                roam: true,
+                itemStyle: {
+                    emphasis: {label: {show: true}}
+                },
+                data: map_result.confirm
+            },
+            {
+                name: '治愈',
+                type: 'map',
+                mapType: 'china',
+                zoom: 1.1, //当前视角的缩放比例
+                roam: true,
+                itemStyle: {
+                    emphasis: {label: {show: true}}
+                },
+                data: map_result.heal
+            },
+            {
+                name: '死亡',
+                type: 'map',
+                mapType: 'china',
+                zoom: 1.1, //当前视角的缩放比例
+                roam: true,
+                itemStyle: {
+                    emphasis: {label: {show: true}}
+                },
+                data: map_result.dead
+            }
+        ]
+
+    };
+
+    //使用制定的配置项和数据显示图表
+    map.setOption(option);
+</script>
+</body>
+</html>
