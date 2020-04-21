@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>基于psutil的系统监控工具</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+    <div class="container" style="padding-top: 100px">
+        <div class="row user-list">
+        <div class="col-sm-12 user" style="">
+            <div id="alert" class="alert alert-success" role="alert" style="margin: auto;left: 0;right: 0;display: none;position: fixed;width: 50%;text-align: center;">删除成功</div>
+        </div>
+        </div>
+        <div class="row user-list">
+        <div class="col-sm-12 user">
+            <div>
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#cpuTab" aria-controls="cpuTab" role="tab" data-toggle="tab">CPU</a></li>
+                <li role="presentation"><a href="#memoryTab" aria-controls="memoryTab" role="tab" data-toggle="tab">内存</a></li>
+                  <li role="presentation"><a href="#diskTab" aria-controls="diskTab" role="tab" data-toggle="tab">磁盘</a></li>
+                <li role="presentation"><a href="#netioTab" aria-controls="netioTab" role="tab" data-toggle="tab">网卡</a></li>
+                <li role="presentation"><a href="#processTab" aria-controls="processTab" role="tab" data-toggle="tab">进程</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="cpuTab">
+                    <div id="cpu" style="width:800px; height:300px;padding-top: 40px;margin-left: auto;margin-right: auto"></div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="memoryTab">
+                    <div class="row user-list">
+                        <div class="col-sm-5 user" style="">
+                            <ul class="list-group" style="padding-left:200px;padding-top:50px">
+                              <li class="list-group-item list-group-item-success">内存大小：<span class="badge" id="mtotal"></span></li>
+                              <li class="list-group-item list-group-item-info">内存已使用大小：<span class="badge" id="mused"></span></li>
+                              <li class="list-group-item list-group-item-warning">内存剩余大小：<span class="badge" id="mfree"></span></li>
+                                <li class="list-group-item list-group-item-success">交换区大小：<span class="badge" id="stotal"></span></li>
+                              <li class="list-group-item list-group-item-info">交换区已使用大小：<span class="badge" id="sused"></span></li>
+                              <li class="list-group-item list-group-item-warning">交换区剩余大小：<span class="badge" id="sfree"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-7 user" style="">
+                            <div id="memory" style="width:800px; height:300px;padding-top: 40px;margin-left: -100px;margin-right: auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="netioTab">
+                    <div class="row user-list">
+                        <div class="col-sm-12 user" style="">
+                            <div id="netio" style="width:800px; height:300px;padding-top: 40px;margin-left: auto;margin-right: auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="processTab">
+                    <table class="table table-hover" style="height:100px;padding-top: 40px;margin-left: auto;margin-right: auto">
+                      <thead>
+                        <tr>
+                          <th>PID</th>
+                          <th>程序</th>
+                          <th>占用内存</th>
+                          <th>创建时间</th>
+                          <th>强行停止</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody">
+                      </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane container" id="diskTab">
+                    <div class="row user-list">
+                        <div class="col-sm-3 user" style="">
+                            <ul class="list-group" style="padding-top:100px">
+                              <li class="list-group-item list-group-item-success">磁盘容量：<span class="badge" id="total"></span></li>
+                              <li class="list-group-item list-group-item-info">已使用容量：<span class="badge" id="used"></span></li>
+                              <li class="list-group-item list-group-item-warning">空闲容量：<span class="badge" id="free"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-9 user" style="">
+                            <div id="disk" style="width:800px; height:300px;padding-top: 40px;margin-left: auto;margin-right: auto"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script>
+        var chart = echarts.init(document.getElementById('cpu'), 'white', {renderer: 'canvas'});
+        var memory = echarts.init(document.getElementById('memory'), 'white', {renderer: 'canvas'});
+        var netio = echarts.init(document.getElementById('netio'), 'white', {renderer: 'canvas'});
+        var disk = echarts.init(document.getElementById('disk'), 'white', {renderer: 'canvas'});
+
+        $(
+            function () {
+                fetchData(chart);
+                setInterval(fetchData, 2000);
+                fetchMemoryData(memory);
+                setInterval(fetchMemoryData, 2000);
+                fetchNetioData(netio);
+                setInterval(fetchNetioData, 2000);
+                setInterval(fetchProcessData, 2000);
+                fetchDiskData(disk);
+                setInterval(fetchDiskData, 2000);
+            },
+            $('#myTabs a').click(function (e) {
+              e.preventDefault()
+              $(this).tab('show')
+            })
+        );
+
+        function fetchData() {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/cpu",
+                dataType: 'json',
+                success: function (result) {
+                    chart.setOption(result);
+                }
+            });
+        }
+
+        function fetchMemoryData() {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/memory",
+                dataType: 'json',
+                success: function (result) {
+                    memory.setOption(JSON.parse(result.liquid));
+                    $('#mtotal').html((result.mtotal/1024/1024/1024).toFixed(2) + 'G')
+                    $('#mused').html((result.mused/1024/1024/1024).toFixed(2) + 'G')
+                    $('#mfree').html((result.mfree/1024/1024/1024).toFixed(2) + 'G')
+                    $('#stotal').html((result.stotal/1024/1024/1024).toFixed(2) + 'G')
+                    $('#sused').html((result.sused/1024/1024/1024).toFixed(2) + 'G')
+                    $('#sfree').html((result.sfree/1024/1024/1024).toFixed(2) + 'G')
+                }
+            });
+        }
+        function fetchNetioData() {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/netio",
+                dataType: 'json',
+                success: function (result) {
+                    netio.setOption(result);
+                }
+            });
+        }
+        function fetchProcessData() {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/process",
+                dataType: 'json',
+                success: function (result) {
+                    html = ''
+                    list = result.list
+                    for (var l in list) {
+                        html = html +'<tr><td>' + list[l].PID + '</td><td>' + list[l].name + '</td><td>' + list[l].mem + '</td><td>' + list[l].ctime + '</td><td><button type="button" class="btn btn-default btn-xs" onclick="delProcess('+list[l].PID+')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td></tr>'
+                    }
+                    $('#tbody').html(html)
+                }
+            })
+        }
+
+        function delProcess(pid) {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/delprocess?pid="+pid,
+                dataType: 'json',
+                success: function (result) {
+                    $("#alert").fadeIn(1000);
+                    $("#alert").fadeOut(3000);
+                }
+            })
+        }
+
+        function fetchDiskData() {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:5000/disk",
+                dataType: 'json',
+                success: function (result) {
+                    disk.setOption(JSON.parse(result.line));
+                    $('#total').html((result.total/1000000000).toFixed(2) + 'G')
+                    $('#used').html((result.used/1000000000).toFixed(2) + 'G')
+                    $('#free').html((result.free/1000000000).toFixed(2) + 'G')
+                }
+            });
+        }
+
+    </script>
+  </body>
+</html>
