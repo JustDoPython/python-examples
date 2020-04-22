@@ -4,6 +4,8 @@
 + [py-anjia](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-anjia) ：用 Python 了解一下安家
 + [py-qrcode](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-qrcode) ：用 Python 生成炫酷二维码及解析
 + [py-recogLP](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-recogLP) ：如何用 Python 识别车牌
++ [py-plane](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-plane) ：用 Python 实现微信版飞机大战
++ [py-rain](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-rain) ：用 Python 实现黑客帝国中的数字雨落既视感
 
 ---
 
