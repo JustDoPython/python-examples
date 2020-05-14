@@ -1,0 +1,27 @@
+{
+    "loopWaitSeconds": 60,
+    "spurtWaitSeconds": 10,
+    "latestLeaveMinute": 5,
+    "mailConfig": {
+      "FROM": "tom@example.com",
+      "HOST": "smtp.example.com",
+      "PORT": "465",
+      "USER": "tom",
+      "PASS": "password",
+      "SSL": true
+    },
+    "alertMail": "lily@example.com",
+    "lines": [{
+      "line": "835快",
+      "dir": "5066222788346588777",
+      "stop": "13",
+      "begin": "08:00",
+      "end": "08:30"
+    }, {
+      "line": "835快",
+      "dir": "4997908670784162973",
+      "stop": "3",
+      "begin": "19:00",
+      "end": "20:30"
+    }]
+  }
