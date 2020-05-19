@@ -13,6 +13,8 @@ Python技术 公众号文章代码库
 + [greedy-snake](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-04-04-greedy-snake)：贪吃蛇
 
 + [epidemic-big-screen](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-04-20-epidemic-big-screen)：疫情数据大屏
+
++ [520](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-520)：Python 教你花式表白小姐姐
 ---
 
 从小白到工程师的学习之路。
