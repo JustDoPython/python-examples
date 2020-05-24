@@ -5,8 +5,9 @@
 + [jupyter_notebook](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/jupyter_notebook) ：Python Jupyter notebook 操作
 + [send_email](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/send_email) ：今天，我用 Python 给武汉人民发一封邮件 
 + [Earth_view](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Earth_view) ：如何用 Python 制作地球仪？ 
++ [twoai_chat](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/twoai_chat) ：两个机器人在一起会碰撞出怎样的的火花？ 
 
-
+twoai_chat
 ---
 
 从小白到工程师的学习之路
