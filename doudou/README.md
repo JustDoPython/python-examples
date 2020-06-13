@@ -17,10 +17,12 @@ Python技术 公众号文章代码库
 + [520](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-520)：Python 教你花式表白小姐姐
 
 + [字符画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-character-drawing)：字符画
+
++ [迷宫](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-12-maze)：迷宫
 ---
 
 从小白到工程师的学习之路。
 
-关注公众号：python 技术，回复"python"一起学习交流。
+关注公众号：python 技术，回复「python」一起学习交流。
 
 ![](http://favorites.ren/assets/images/python.jpg)
