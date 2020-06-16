@@ -8,6 +8,7 @@
 + [py-rain](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-rain) ：用 Python 实现黑客帝国中的数字雨落既视感
 + [py-facepalm](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-facepalm) ：用 Python 画一个捂脸表情
 + [py-tetris](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-tetris) ：用 Python 写个俄罗斯方块
++ [py-counter](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-counter) ：不到 100 行 Python 代码写个计算器
 
 ---
 
