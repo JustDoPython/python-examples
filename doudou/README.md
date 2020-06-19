@@ -19,6 +19,9 @@ Python技术 公众号文章代码库
 + [字符画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-character-drawing)：字符画
 
 + [迷宫](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-12-maze)：迷宫
+
++ [Python 骚操作](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-19-skills)：Python 骚操作
+
 ---
 
 从小白到工程师的学习之路。
