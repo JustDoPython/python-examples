@@ -10,8 +10,8 @@ from pyecharts import options as opts
 class zhubo():
 
     mobile_root = "/sdcard/zhubo/"
-    computer_root = "/Users/wubin/Desktop/zhubo/"
-    except_file = "/Users/wubin/Desktop/zhubo/except.txt"
+    computer_root = "/Users/xx/Desktop/zhubo/"
+    except_file = "/Users/xx/Desktop/zhubo/except.txt"
 
 
     def __init__(self):
@@ -80,8 +80,8 @@ class zhubo():
         :return: access_token
         '''
 
-        ak = 'MbDXGOrgXHqsgHKlAZLv6K93'
-        sk = 'fzIOiK2aEAKntAY7cOEHkUCoZOawe0wR'
+        ak = 'ak'
+        sk = 'sk'
 
         host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=' + ak + '&client_secret=' + sk
         response = requests.get(host)
