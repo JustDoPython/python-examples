@@ -27,8 +27,8 @@ class zhubo():
         # 输出执行命令结果结果
         stdout = stdout.decode("utf-8")
 
-        # if len(stdout) <= 26:
-        #     raise Exception("没有连接到手机")
+        if len(stdout) <= 26:
+            raise Exception("没有连接到手机")
         print("成功连接手机!")
 
 
