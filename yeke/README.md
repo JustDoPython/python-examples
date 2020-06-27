@@ -9,6 +9,7 @@
 + [py-facepalm](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-facepalm) ：用 Python 画一个捂脸表情
 + [py-tetris](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-tetris) ：用 Python 写个俄罗斯方块
 + [py-counter](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-counter) ：不到 100 行 Python 代码写个计算器
++ [py-tank](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-tank) ：用 Python 写个坦克大战
 
 ---
 
