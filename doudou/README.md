@@ -16,11 +16,13 @@ Python技术 公众号文章代码库
 
 + [520](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-520)：Python 教你花式表白小姐姐
 
-+ [字符画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-character-drawing)：字符画
++ [character-drawing](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-05-17-character-drawing)：字符画
 
-+ [迷宫](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-12-maze)：迷宫
++ [maze](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-12-maze)：迷宫
 
-+ [Python 骚操作](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-19-skills)：Python 骚操作
++ [python-skills](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-19-skills)：Python 骚操作
+
++ [lagou](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-07-13-lagou)：拉钩招聘数据分析
 
 ---
 
