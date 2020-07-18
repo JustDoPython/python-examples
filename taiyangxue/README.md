@@ -7,6 +7,7 @@
 - [busclock](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/busclock) : 公交闹钟 ———— 再也不用白等车了
 - [diffusionsimulator](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/diffusionsimulator) : python 告诉你疫情多可怕
 - [simplenumpy](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simplenumpy) : 干掉公式 —— numpy 就要这样学
+- [university](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/university) : 大学大比拼
 
 ---
 
