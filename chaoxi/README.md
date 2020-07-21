@@ -8,7 +8,7 @@
 + [twoai_chat](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/twoai_chat) ：两个机器人在一起会碰撞出怎样的的火花？ 
 + [Matplotlib_3D](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Matplotlib_3D) ：Python 30 行代码画各种 3D 图形
 + [five_code](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/five_code) ：Python 5 行代码的神奇操作！
-
++ [python_sort](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/python_sort) ：Python 排序了解一下？
 
 ---
 
