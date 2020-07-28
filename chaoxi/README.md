@@ -9,6 +9,7 @@
 + [Matplotlib_3D](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Matplotlib_3D) ：Python 30 行代码画各种 3D 图形
 + [five_code](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/five_code) ：Python 5 行代码的神奇操作！
 + [python_sort](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/python_sort) ：Python 排序了解一下？
++ [send_weather](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/send_weather) ：Python 小技能之抓取天气信息发送给小姐姐      
 
 ---
 
