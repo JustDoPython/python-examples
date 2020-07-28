@@ -11,6 +11,7 @@
 + [py-counter](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-counter) ：不到 100 行 Python 代码写个计算器
 + [py-tank](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-tank) ：用 Python 写个坦克大战
 + [py-scratch](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-scratch) ：不到 50 行 Python 代码，做个刮刮卡
++ [py-xxl](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-xxl) ：用 Python 写个消消乐小游戏
 
 ---
 
