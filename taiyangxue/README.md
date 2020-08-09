@@ -8,6 +8,7 @@
 - [diffusionsimulator](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/diffusionsimulator) : python 告诉你疫情多可怕
 - [simplenumpy](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simplenumpy) : 干掉公式 —— numpy 就要这样学
 - [university](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/university) : 大学大比拼
+- [resize](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/resize) : 老板让很快处理数百图片，我该辞职吗
 
 ---
 
