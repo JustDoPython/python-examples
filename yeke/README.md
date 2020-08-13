@@ -13,6 +13,7 @@
 + [py-scratch](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-scratch) ：不到 50 行 Python 代码，做个刮刮卡
 + [py-xxl](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-xxl) ：用 Python 写个消消乐小游戏
 + [py-sun](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-sun) ：用 Python 动态模拟太阳系的运转
++ [py-aljx](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-aljx) ：阿里注册了新公司京西，用 Python 看看网友怎么说
 
 ---
 
