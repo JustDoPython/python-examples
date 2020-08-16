@@ -92,15 +92,14 @@ def dataStock(html):
 
 def dataFormat(code, type_='fund', cycleDays=5, begin='2001-01-01'):
     rawdf = pd.read_excel('%s_%s.xlsx' % (type_, code))
-    buydf = rawdf[rawdf.index % cycleDays==0] ## 选出定投时机
     # 选择对应的列
     if type_ == 'fund':
-        buydf = buydf[['公布日期','单位净值']]
+        buydf = rawdf[['公布日期','单位净值']]
     else:
         buydf = buydf[['日期','收盘价']]
     buydf.columns = ["日期","单价"]
-
     buydf = buydf[buydf['日期']>=begin]
+    buydf = buydf[buydf.index % cycleDays==0] # 选出定投时机
     return buydf
 
 def show(buydf, amount=1000):
