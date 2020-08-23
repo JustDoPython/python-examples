@@ -10,6 +10,7 @@
 - [university](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/university) : 大学大比拼
 - [resize](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/resize) : 老板让很快处理数百图片，我该辞职吗
 - [regularinvest](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/regular_invest) : 定投改变命运？python 帮你解答
+- [sandman2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/sandman2) : 不用一行代码，用 API 操作数据库，你信吗
 
 ---
 
