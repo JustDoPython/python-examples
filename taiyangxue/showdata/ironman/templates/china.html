@@ -1,0 +1,94 @@
+﻿{% extends "layout.html" %}
+
+{% block left %}
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <li><a href="/line">24小时访问趋势</a></li>
+        <li><a href="/bar">每日访问情况</a></li>
+        <li><a href="/pie">客户端设备占比</a></li>
+        <li class="active"><a href="/china">用户分布</a></li>
+        <li><a href="/wordcloud">爬虫词云</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block right %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">{{title}}</h1>
+
+    <div class="row placeholders">
+        <!--展示区-->
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+        <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main">
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block echarts_js %}
+<script src="static/js/china.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option = {
+            tooltip: {
+                    formatter:function(params,ticket, callback){
+                        return params.seriesName+'<br />'+params.name+'：'+params.value
+                    }
+                },
+            visualMap: {
+                min: 0,
+                max: 100,
+                left: 'left',
+                top: 'bottom',
+                text: ['高','低'],
+                inRange: {
+                    color:  ['#6FCF6A', '#FFFD64', '#FF5000']
+                },
+                show:true
+            },
+            geo: {
+                map: 'china',
+                roam: false,
+                zoom:1.23,
+                label: {
+                    normal: {
+                        show: true,
+                        fontSize:'10',
+                        color: 'rgba(0,0,0,0.7)'
+                    }
+                },
+                itemStyle: {
+                    normal:{
+                        borderColor: 'rgba(0, 0, 0, 0.2)'
+                    },
+                    emphasis:{
+                        areaColor: '#F3B329',
+                        shadowOffsetX: 0,
+                        shadowOffsetY: 0,
+                        shadowBlur: 20,
+                        borderWidth: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            },
+            series : [
+                {
+                    name: '数据量',
+                    type: 'map',
+                    geoIndex: 0,
+                    data:{{data|safe}}
+                }
+            ]
+        };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+</script>
+{% endblock %}

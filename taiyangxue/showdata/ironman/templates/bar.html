@@ -1,0 +1,113 @@
+﻿{% extends "layout.html" %}
+
+{% block left %}
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <li><a href="/line">24小时访问趋势</a></li>
+    <li class="active"><a href="/bar">每日访问情况</a></li>
+    <li><a href="/pie">客户端设备占比</a></li>
+    <li><a href="/china">用户分布</a></li>
+    <li><a href="/wordcloud">爬虫词云</a></li>
+  </ul>
+</div>
+{% endblock %}        
+        
+{% block right %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <h1 class="page-header">{{title}}</h1>
+
+  <div class="row placeholders">
+        <!--展示区-->
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main">
+
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block echarts_js %}
+
+<script type="text/javascript" >
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('main'));
+
+// 指定图表的配置项和数据
+var option = {
+
+        legend: {
+            top: 10,
+            width: 500,
+            itemWidth: 40,
+            data: {{legend|safe}}
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                magicType: {
+                    show:true,
+                    title:{
+                        line:'切换为折线图',
+                        bar:'切换为柱状图',
+                    },
+                    type: ['line', 'bar']},
+                // restore: {show:true, title:'重置'},
+                saveAsImage: {show:true, title:'保存为图片图'}
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            axisTick:{
+                show:true
+            },
+            data: {{xAxis|safe}}
+        }],
+        yAxis: [{
+            type: 'value',
+            min: 1,
+            // name:"单位：元",
+            axisTick:{
+                show:true
+            },
+            axisLine:{
+                show:true
+            },
+            splitLine:{
+                show:false
+            },
+        }],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        series: [
+        {% for key, value in data.items() %}
+          {
+              name: '{{key}}',
+              type: 'bar',
+              itemStyle:{
+                normal:{
+                    barBorderRadius:5
+                }
+              },
+              label: {
+                  normal: {
+                      show: true,
+                      position: 'top'
+                      }
+          },
+              data: {{value|safe}}
+          },
+        {% endfor %}
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+</script>        
+{% endblock %}

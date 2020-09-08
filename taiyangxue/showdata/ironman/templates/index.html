@@ -1,0 +1,22 @@
+﻿{% extends "layout.html" %}
+
+{% block left %}
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <li><a href="/line">24小时访问趋势</a></li>
+        <li><a href="/bar">每日访问情况</a></li>
+        <li><a href="/pie">客户端设备占比</a></li>
+        <li><a href="/china">用户分布</a></li>
+        <li><a href="/wordcloud">爬虫词云</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block right %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">数据可视化</h1>
+
+</div>
+{% endblock %}
+

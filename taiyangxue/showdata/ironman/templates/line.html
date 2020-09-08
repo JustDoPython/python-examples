@@ -1,0 +1,104 @@
+﻿{% extends "layout.html" %}
+
+{% block left %}
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <li class="active"><a href="/line">24小时访问趋势</a></li>
+        <li><a href="/bar">每日访问情况</a></li>
+        <li><a href="/pie">客户端设备占比</a></li>
+        <li><a href="/china">用户分布</a></li>
+        <li><a href="/wordcloud">爬虫词云</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block right %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">{{title}}</h1>
+
+    <div class="row placeholders">
+        <!--展示区-->
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+        <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main">
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block echarts_js %}
+
+<script type="text/javascript">
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option = {
+            title: {
+                // text: '一周变化',
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:{{legend|safe}}
+            },
+            toolbox: {
+                show: true,
+                itemGap: 15,
+                showTitle: true,
+                feature: {
+                    magicType: {
+                        show:true,
+                        title:{
+                            line:'切换为折线图',
+                            bar:'切换为柱状图',
+                            stack:'堆积',
+                            tiled:'平铺'
+                        },
+                        type: ['line', 'bar', 'stack', 'tiled']},
+                    restore: {show:true, title:'重置'},
+                    saveAsImage: {show:true, title:'保存为图片图'}
+                }
+            },
+            xAxis:  {
+                type: 'category',
+                boundaryGap: false,
+                data: {{xAxis|safe}}
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            },
+            series: [
+            {% for key, value in data.items() %}
+                {
+                    name:'{{key}}',
+                    type:'line',
+                    data:{{value|safe}},
+                    barGap: 0,
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine: {
+                        data: [
+                            {type: 'average', name: '平均值'}
+                        ]
+                    }
+                },
+            {% endfor %}
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+</script>
+{% endblock %}
