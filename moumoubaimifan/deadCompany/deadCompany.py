@@ -16,9 +16,9 @@ def login():
     driver.implicitly_wait(10)
 
     driver.find_element_by_xpath('//form/div[1]/div/div[1]/input').clear()
-    driver.find_element_by_xpath('//form/div[1]/div/div[1]/input').send_keys('18821290263')
+    driver.find_element_by_xpath('//form/div[1]/div/div[1]/input').send_keys('用户名')
     driver.find_element_by_xpath('//form/div[2]/div/div[1]/input').clear()
-    driver.find_element_by_xpath('//form/div[2]/div/div[1]/input').send_keys('123456')
+    driver.find_element_by_xpath('//form/div[2]/div/div[1]/input').send_keys('密码')
     driver.find_element_by_class_name('el-button').click()
     driver.switch_to.default_content()
     time.sleep(5)
