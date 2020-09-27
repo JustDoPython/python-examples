@@ -15,7 +15,6 @@
 + [py-sun](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-sun) ：用 Python 动态模拟太阳系的运转
 + [py-aljx](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-aljx) ：阿里注册了新公司京西，用 Python 看看网友怎么说
 + [py-teacher](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-teacher) ：用 Python 为老师送上节日的祝福
-+ [py-flag](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-flag) ：用 Python 画了几个国家的国旗
 
 ---
 
