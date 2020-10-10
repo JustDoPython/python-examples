@@ -13,6 +13,7 @@
 - [sandman2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/sandman2) : 不用一行代码，用 API 操作数据库，你信吗
 - [showdata](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/showdata) : Flask + echarts 轻松搞定 nginx 日志可视化
 - [dice](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/dice) : 做硬核老爸，我用 Python
+- [python39](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python39) : 你在享受十一长假时，Python 已悄悄地变了
 
 ---
 
