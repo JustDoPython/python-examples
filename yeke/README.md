@@ -15,6 +15,7 @@
 + [py-sun](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-sun) ：用 Python 动态模拟太阳系的运转
 + [py-aljx](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-aljx) ：阿里注册了新公司京西，用 Python 看看网友怎么说
 + [py-teacher](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-teacher) ：用 Python 为老师送上节日的祝福
++ [py-minesweep](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-minesweep) ：用 Python 实现扫雷小游戏
 
 ---
 
