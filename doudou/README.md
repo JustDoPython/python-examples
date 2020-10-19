@@ -14,6 +14,7 @@ Python技术 公众号文章代码库
 + [python-skills](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-06-19-skills)：Python 骚操作
 + [lagou](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-07-13-lagou)：拉钩招聘数据分析
 + [national-day](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-10-13-national-day)：国庆旅游热图
++ [Appium](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-10-20-appium)：Appium 神器
 
 ---
 
