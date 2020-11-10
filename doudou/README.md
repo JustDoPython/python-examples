@@ -2,7 +2,7 @@
 
 Python技术 公众号文章代码库
 
-+ [douban-movie-top250](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-02-20-douban-movie-top250)：实战｜数据分析篇之豆瓣电影 TOP250 示例代码
++ [douban-movie-top250](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-02-20-douban-movie-top250)：实战｜数据分析篇之豆瓣电影 TOP250
 + [duo-la-a-meng](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-duo-la-a-meng)：用 Python 画哆啦 A 梦
 + [fund-fixed-investment](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-found)：指数基金定投到底能不能赚钱？Python 来告诉你答案
 + [pyecharts](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-03-27-pyechars)：Python 图表利器 pyecharts
@@ -16,6 +16,7 @@ Python技术 公众号文章代码库
 + [national-day](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-10-13-national-day)：国庆旅游热图
 + [Appium](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-10-20-appium)：Appium 神器
 + [163 music](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-11-02-163-music)：下载网易云乐库
++ [Chinese People's Volunteer Army](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-11-10-resisting-us-aid-korea)：中国人民志愿军
 
 ---
 
