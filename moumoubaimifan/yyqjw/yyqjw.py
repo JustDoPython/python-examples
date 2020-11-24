@@ -36,7 +36,7 @@ def csv_write(tablelist):
 
 def nlp(text):
     try:
-        cred = credential.Credential("AKIDqUs00jXM04sUpl7lqejX4IUIp38NuxJj", "D9nBJ9wTNzMSHwLSnBzXn3nrxoYTAZsg")
+        cred = credential.Credential("xxx", "xxx")
         httpProfile = HttpProfile()
         httpProfile.endpoint = "nlp.tencentcloudapi.com"
 
