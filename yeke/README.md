@@ -17,7 +17,7 @@
 + [py-teacher](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-teacher) ：用 Python 为老师送上节日的祝福
 + [py-minesweep](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-minesweep) ：用 Python 实现扫雷小游戏
 + [py-ascii](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-ascii) ：Python 实现图片转字符画，静态图、GIF 都能转
-+ [py-ascii](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-snow) ：用 Python 实现带音乐的雪花飘落雪景图
++ [py-snow](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-snow) ：用 Python 实现带音乐的雪花飘落雪景图
 
 ---
 
