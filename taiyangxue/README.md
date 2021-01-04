@@ -16,7 +16,7 @@
 - [python39](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python39) : 你在享受十一长假时，Python 已悄悄地变了
 - [matrix](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/matrix) : Python 世界的黑客帝国
 - [why](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/why) : 练那么多，为啥还不会编程
-
+- [rate](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/rate-of-return) : 练那么多，为啥还不会编程
 ---
 
 从小白到工程师的学习之路
