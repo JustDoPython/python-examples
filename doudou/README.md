@@ -21,7 +21,8 @@ Python技术 公众号文章代码库
 + [Chinese People's Volunteer Army](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-11-10-resisting-us-aid-korea)：中国人民志愿军
 
 ### 2021 代码列表
-+ [GitHub-Top10](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-02-GitHub-Python-Top10)：2020-GitHub-Python-Top10
++ [GitHub-Top10](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-02-GitHub-Python-Top10)：2020 GitHub Python 库 TOP10
++ [fake-data](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-10-fake-data)：假数据
 
 ---
 
