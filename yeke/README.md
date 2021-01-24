@@ -19,6 +19,8 @@
 + [py-ascii](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-ascii) ：Python 实现图片转字符画，静态图、GIF 都能转
 + [py-snow](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-snow) ：用 Python 实现带音乐的雪花飘落雪景图
 + [py-discern](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-discern) ：十行 Python 代码就提取了韦小宝的身份证信息
++ [py-flag](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-flag) ：用 Python 给微信头像加个圣诞老人（平安果）小图标
++ [py-firework](https://github.com/JustDoPython/python-examples/tree/master/yeke/py-firework) ：快到春节了，用 Python 实现一场烟花秀
 
 ---
 
