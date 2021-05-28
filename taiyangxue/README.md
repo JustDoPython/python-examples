@@ -18,6 +18,7 @@
 - [why](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/why) : 练那么多，为啥还不会编程
 - [rate](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/rate-of-return) : 做时间的朋友，必须知道收益咋算
 - [blockchain](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/blockchain) : 比特币涨疯了，区块链是什么鬼？
+- [simple game](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simple-game) : 与其说教，不如一起写个游戏
 
 ---
 
