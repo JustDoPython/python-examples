@@ -25,7 +25,7 @@ Python技术 公众号文章代码库
 + [fake-data](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-10-fake-data)：假数据
 + [mitmproxy](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-02-08-mitmproxy)：中间人攻击
 + [poetry](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-03-09-programmer-romance)：程序员的浪漫
-
++ [pyautogui](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-06-30-pyautogui)：自动制作视频
 ---
 
 从小白到工程师的学习之路。
