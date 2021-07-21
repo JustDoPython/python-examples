@@ -45,9 +45,3 @@ class Chaojiying_Client(object):
         r = requests.post('http://upload.chaojiying.net/Upload/ReportError.php', data=params, headers=self.headers)
         return r.json()
 
-
-if __name__ == '__main__':
-	cj = Chaojiying_Client('xxxx', 'xxxx', 'xxxx')	#用户中心>>软件ID 生成一个替换 96001
-	im = open('D:/1.jpg', 'rb').read()													#本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
-	print(cj.PostPic(im, 9004))												#1902 验证码类型  官方网站>>价格体系 3.4+版 print 后要加()
-
