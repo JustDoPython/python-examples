@@ -18,7 +18,7 @@ Python技术 公众号文章代码库
 
 [后浪青年的聊天，需要Python助威](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/doutu)：后浪青年的聊天，需要Python助威
 
-[用 Python 画动态时钟](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/drawclock)：
+[用 Python 画动态时钟](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/drawclock)：用 Python 画动态时钟
 
 [想知道未来孩子长相？Python人脸融合告诉你](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/facemerge)：想知道未来孩子长相？Python人脸融合告诉你
 
