@@ -33,7 +33,7 @@ Python技术 公众号文章代码库
 
 [京东自动保价脚本](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/jbj)
 
-[淘宝、拼多多、抖音主播颜值大比拼](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/zhubo>
+[淘宝、拼多多、抖音主播颜值大比拼](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/zhubo)
 
 [使用 MitmProxy 自动抓取微信公众号阅读数、点赞和再看数据](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/wxCrawler)
 
@@ -57,23 +57,23 @@ Python技术 公众号文章代码库
 
 [一起来用 Python 做个是男人就坚持100秒游戏](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/game)
 
-[github高级搜索技巧](https://docs.github.com/cn/free-pro-team@latest/github>
+[github高级搜索技巧](https://docs.github.com/cn/free-pro-team@latest/github)
 
-[用 Python + Appium 的方式自动化清理微信僵尸好友](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/wxDelFriends>
+[用 Python + Appium 的方式自动化清理微信僵尸好友](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/wxDelFriends)
 
-[强大！用 60 行代码自动抢微信红包](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/wxRedPacket>
+[强大！用 60 行代码自动抢微信红包](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/wxRedPacket)
 
-[用 Appium 自动收取蚂蚁森林能量](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/AntForest>
+[用 Appium 自动收取蚂蚁森林能量](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/AntForest)
 
-[用 Python 将 html 转为 pdf、word](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/convertHtml>
+[用 Python 将 html 转为 pdf、word](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/convertHtml)
 
-[上班摸鱼程序，再也不怕领导偷偷出现在身后了](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/face_contrast>
+[上班摸鱼程序，再也不怕领导偷偷出现在身后了](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/face_contrast)
 
-[用 Python 抓取知乎几千张小姐姐图片是什么体验？](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/zhihu>
+[用 Python 抓取知乎几千张小姐姐图片是什么体验？](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/zhihu)
 
-[将什么值得买优惠信息部署到腾讯云函数并推送到QQ](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/smzdm/smzdm.py>
+[将什么值得买优惠信息部署到腾讯云函数并推送到QQ](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/smzdm/smzdm.py)
 
-[Python 制作抖音播放量为 30W+ 的一起变老素材](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/changeOld/changeOld.py>
+[Python 制作抖音播放量为 30W+ 的一起变老素材](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/changeOld/changeOld.py)
 
 [福利来了! 用 130 行代码下载 B 站舞蹈区所有视频](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/bilibili/bilibili.py)
 
