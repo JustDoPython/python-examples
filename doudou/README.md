@@ -8,8 +8,6 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
-### 2021 代码列表
-
 [2020 年 GitHub 上十大最火 Python 项目，看完之后我裂开了](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-02-GitHub-Python-Top10)
 
 [都 2021 年了，居然还有人在手写测试数据?](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-01-10-fake-data)
@@ -19,8 +17,6 @@ Python技术 公众号文章代码库
 [谁说程序员不懂浪漫，当代码遇到文学...](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-03-09-programmer-romance)
 
 [解放双手，提高生产力，看我如何用 Python 实现自动化剪视频](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-06-30-pyautogui)
-
-### 2020 代码列表
 
 [实战｜数据分析篇之豆瓣电影 TOP250](https://github.com/JustDoPython/python-examples/tree/master/doudou/2020-02-20-douban-movie-top250)
 
