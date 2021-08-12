@@ -1,5 +1,6 @@
 # Python 代码实例
 
+- [python-op](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op) : YYDS! Python 帮我扛起运营大旗！
 - [timefriend](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/timefriend) ：做时间的朋友 —— 用印象笔记打造时间记录工具
 - [pythondocx](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythondocx) ：Word 神器 python-docx
 - [pythonexcel](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythonxlsx) ：Excel 神器 OpenPyXl
@@ -19,7 +20,7 @@
 - [rate](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/rate-of-return) : 做时间的朋友，必须知道收益咋算
 - [blockchain](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/blockchain) : 比特币涨疯了，区块链是什么鬼？
 - [simple game](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simple-game) : 与其说教，不如一起写个游戏
-- [python-op](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op) : YYDS! Python 帮我扛起运营大旗！
+
 ---
 
 从小白到工程师的学习之路
