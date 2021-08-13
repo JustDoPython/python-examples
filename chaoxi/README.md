@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[七夕不懂浪漫？Python 帮你制造惊喜！！！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/qixi) 七夕不懂浪漫？Python 帮你制造惊喜！！！
+
 [Python 小技之 Office 文件转 PDF](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/FilesToPDF) Python 小技之 Office 文件转 PDF
 
 [Office 文件转 PDF 之服务实战](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/FilesToPDF_Server)：Office 文件转 PDF 之服务实战
