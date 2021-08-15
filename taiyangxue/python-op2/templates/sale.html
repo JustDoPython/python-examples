@@ -1,0 +1,51 @@
+{% extends "layout.html" %} {% block menu %}
+<li><a href="/check_rate">打卡率</a></li>
+<li><a href="/memberdata">成员数据</a></li>
+<li><a href="/teamleader">组长数据</a></li>
+<li class="active"><a href="/sale">开单记录</a></li>
+{% endblock %} {% block main %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">{{title}}</h1>
+
+    <div class="row placeholders">
+        <div id="jsGrid"></div>
+
+    </div>
+</div>
+{% endblock %} {% block script %}
+<script type="text/javascript">
+    $("#jsGrid").jsGrid({
+        height: '600',
+        width: "100%",
+        editing: false,
+        sorting: false,
+        autoload: true,
+        controller: {
+            loadData: function() {
+                var d = $.Deferred();
+                $.ajax({
+                    url: "/api/sale",
+                }).done(function(response) {
+                    d.resolve(response.data);
+                });
+                return d.promise();
+            }
+        },
+
+        fields: [{
+            'name': 'team',
+            'title': '组',
+            type: "text"
+        }, {
+            'name': 'name',
+            'title': '昵称',
+            type: "text"
+        }, {
+            'name': 'count',
+            'title': '开单',
+            type: "text"
+        }, ]
+    });
+</script>
+{% endblock %}

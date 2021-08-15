@@ -1,0 +1,73 @@
+{% extends "layout.html" %} {% block menu %}
+<li><a href="/check_rate">打卡率</a></li>
+<li><a href="/memberdata">成员数据</a></li>
+<li class="active"><a href="/teamleader">组长数据</a></li>
+<li><a href="/sale">开单记录</a></li>
+{% endblock %} {% block main %}
+<!--右边展示-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">{{title}}</h1>
+
+    <div class="row placeholders">
+        <!--展示区-->
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+        <!-- <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main">
+
+        </div> -->
+        <div id="jsGrid"></div>
+
+    </div>
+</div>
+{% endblock %} {% block script %}
+<script type="text/javascript">
+    $("#jsGrid").jsGrid({
+        height: '600',
+        width: "100%",
+        editing: false,
+        sorting: false,
+        autoload: true,
+        controller: {
+            loadData: function() {
+                var d = $.Deferred();
+                $.ajax({
+                    url: "/api/teamleader",
+                }).done(function(response) {
+                    d.resolve(response.data);
+                });
+                return d.promise();
+            }
+        },
+        fields: [{
+            'name': '组',
+            type: "text"
+        }, {
+            'name': '昵称',
+            type: "text"
+        }, {
+            'name': '组员开单',
+            type: "text"
+        }, {
+            'name': '例会',
+            type: "text"
+        }, {
+            'name': '轮值',
+            type: "text"
+        }, {
+            'name': '打分',
+            type: "text"
+        }, {
+            'name': '早读',
+            type: "text"
+        }, {
+            'name': '主持',
+            type: "text"
+        }, {
+            'name': '话题',
+            type: "text"
+        }, {
+            'name': '积分',
+            type: "text"
+        }, ]
+    });
+</script>
+{% endblock %}

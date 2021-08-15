@@ -1,0 +1,227 @@
+{% extends "layout.html" %} {% block menu %}
+<li class="active"><a href="/check_rate">打卡率</a></li>
+<li><a href="/memberdata">成员数据</a></li>
+<li><a href="/teamleader">组长数据</a></li>
+<li><a href="/sale">开单记录</a></li>
+{% endblock %} {% block main %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">{{title}}</h1>
+    <div class="row placeholders">
+        <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main"></div>
+        <div class="col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div id="detail">点击图表查看 打卡详情</div>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block script %}
+<script src="../static/js/jquery.2.0.3.min.js" type="text/javascript"></script>
+<script src="../static/js/echarts5.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var app = {};
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(chartDom);
+    var option;
+
+    var posList = [
+        'left', 'right', 'top', 'bottom',
+        'inside',
+        'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+        'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+    ];
+
+    app.configParameters = {
+        rotate: {
+            min: -90,
+            max: 90
+        },
+        align: {
+            options: {
+                left: 'left',
+                center: 'center',
+                right: 'right'
+            }
+        },
+        verticalAlign: {
+            options: {
+                top: 'top',
+                middle: 'middle',
+                bottom: 'bottom'
+            }
+        },
+        position: {
+            options: posList.reduce(function(map, pos) {
+                map[pos] = pos;
+                return map;
+            }, {})
+        },
+        distance: {
+            min: 0,
+            max: 100
+        }
+    };
+
+    app.config = {
+        rotate: 90,
+        align: 'center',
+        verticalAlign: 'middle',
+        position: 'insideTop', //'insideBottom',
+        distance: 15,
+        onChange: function() {
+            var labelOption = {
+                normal: {
+                    rotate: app.config.rotate,
+                    align: app.config.align,
+                    verticalAlign: app.config.verticalAlign,
+                    position: app.config.position,
+                    distance: app.config.distance
+                }
+            };
+            myChart.setOption({
+                series: [{
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }]
+            });
+        }
+    };
+
+
+    var labelOption = {
+        show: true,
+        position: app.config.position,
+        distance: app.config.distance,
+        align: app.config.align,
+        verticalAlign: app.config.verticalAlign,
+        // rotate: app.config.rotate,
+        // formatter: '{c}',
+        fontSize: 16,
+        rich: {
+            name: {}
+        }
+    };
+
+    option = {
+        title: {
+            show: true,
+            left: 'center',
+            top: 'top'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            top: 25
+        },
+        toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                mark: {
+                    show: true
+                },
+                magicType: {
+                    show: true,
+                    type: ['line', 'bar', 'tiled']
+                },
+                restore: {
+                    show: true
+                },
+                saveAsImage: {
+                    show: true
+                }
+            }
+        },
+        dataset: {
+            source: {
+                {
+                    data | safe
+                }
+            }
+        },
+        dataZoom: [{
+            type: 'slider',
+            start: 60,
+            end: 100
+        }],
+        xAxis: [{
+            type: 'category',
+        }],
+        yAxis: [{
+            type: 'value'
+        }],
+        series: [{
+            type: 'bar',
+            barGap: 0.1,
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+        }, {
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+        }, {
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+        }, {
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+        }, {
+            type: 'bar',
+            label: labelOption,
+            emphasis: {
+                focus: 'series'
+            },
+        }]
+    };
+
+    myChart.on('click', 'series', function(params) {
+        console.log(params);
+        $.ajax({
+            url: "/api/teamcheckdetail",
+            data: {
+                team: params.seriesName,
+                date: params.name
+            }
+        }).done(function(response) {
+            console.log(response);
+            data = response.data;
+            $("#detail").jsGrid({
+                editing: false,
+                sorting: false,
+                autoload: false,
+                data: data,
+                fields: [{
+                    'name': 'name',
+                    'title': '昵称'
+                }, {
+                    'name': 'check',
+                    'title': '打卡'
+                }]
+            });
+        });
+    });
+
+    option && myChart.setOption(option);
+</script>
+{% endblock %}
