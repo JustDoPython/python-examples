@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[神器！五分钟完成大型爬虫项目！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/airspider)：神器！五分钟完成大型爬虫项目！
+
 [卧槽！几行代码，干掉一个网站！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/gengif)：卧槽！几行代码，干掉一个网站！
 
 [牛逼！用Python为她设计专属签名软件](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/artname)：牛逼！用Python为她设计专属签名软件
