@@ -10,6 +10,11 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[中秋不发女朋友，发追女神的方法](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/weibo.py)
+
+[用 Python 帮小伙伴找到头上一片绿的证据！](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/history)
+
+[无损提取视频中的小姐姐图片](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/lsp)
 
 [小游戏：换脸术](https://github.com/JustDoPython/python-100-day/tree/master/FusionFace)
 
