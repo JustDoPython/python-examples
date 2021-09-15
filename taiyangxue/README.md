@@ -1,6 +1,6 @@
 # Python 代码实例
 
-- [python-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-thread) : 有了这个方法，数据再多也不怕了
+- [python-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-thread) : 这么一搞，再也不怕线程打架了
 - [python-op2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op2) : 只需一招，Python 将系统秒变在线版！
 - [python-op](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op) : YYDS! Python 帮我扛起运营大旗！
 - [timefriend](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/timefriend) ：做时间的朋友 —— 用印象笔记打造时间记录工具
