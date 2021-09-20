@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[神器 Spider！几分钟入门分布式爬虫！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/disspider)：神器 Spider！几分钟入门分布式爬虫！
+
 [神器！五分钟完成大型爬虫项目！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/airspider)：神器！五分钟完成大型爬虫项目！
 
 [卧槽！几行代码，干掉一个网站！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/gengif)：卧槽！几行代码，干掉一个网站！
