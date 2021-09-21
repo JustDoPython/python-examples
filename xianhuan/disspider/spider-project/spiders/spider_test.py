@@ -55,40 +55,6 @@ class SpiderTest(feapder.Spider):
                 result['count'] = int(obj['count']) # 近一月个股研报数
                 yield result
 
-    def save_data(self, items):
-        result_list = []
-        for i in items['data']:
-            result = {}
-            obj = i
-            result['orgName'] = obj['orgName'] #机构名称
-            result['orgSName'] = obj['orgSName'] #机构简称
-            result['publishDate'] = obj['publishDate'] #发布日期
-            result['predictNextTwoYearEps'] = obj['predictNextTwoYearEps'] #后年每股盈利
-            result['title'] = obj['title'] #报告名称
-            result['stockName'] = obj['stockName'] #股票名称
-            result['stockCode'] = obj['stockCode'] #股票code
-            result['orgCode'] = obj['stockCode'] #机构code
-            result['predictNextTwoYearPe'] = obj['predictNextTwoYearPe'] #后年市盈率
-            result['predictNextYearEps'] = obj['predictNextYearEps'] # 明年每股盈利
-            result['predictNextYearPe'] = obj['predictNextYearPe'] # 明年市盈率
-            result['predictThisYearEps'] = obj['predictThisYearEps'] #今年每股盈利
-            result['predictThisYearPe'] = obj['predictThisYearPe'] #今年市盈率
-            result['indvInduCode'] = obj['indvInduCode'] # 行业代码
-            result['indvInduName'] = obj['indvInduName'] # 行业名称
-            result['lastEmRatingName'] = obj['lastEmRatingName'] # 上次评级名称
-            result['lastEmRatingValue'] = obj['lastEmRatingValue'] # 上次评级代码
-            result['emRatingValue'] = obj['emRatingValue'] # 评级代码
-            result['emRatingName'] = obj['emRatingName'] # 评级名称
-            result['ratingChange'] = obj['ratingChange'] # 评级变动
-            result['researcher'] = obj['researcher'] # 研究员
-            result['encodeUrl'] = obj['encodeUrl'] # 链接
-            result['count'] = int(obj['count']) # 近一月个股研报数
-
-            result_list.append(result)
-
-            self.insertdb(result_list)
-
-        return result_list
 
     def download_midware(self, request):
         request.headers = {
@@ -102,24 +68,6 @@ class SpiderTest(feapder.Spider):
     def validate(self, request, response):
         if response.status_code != 200:
             raise Exception("response code not 200") # 重试
-
-
-    def insertdb(self, data_list):
-        attrs = ['title', 'stockName', 'stockCode', 'orgCode', 'orgName', 'orgSName', 'publishDate', 'predictNextTwoYearEps',
-                 'predictNextTwoYearPe', 'predictNextYearEps', 'predictNextYearPe', 'predictThisYearEps', 'predictThisYearPe',
-                 'indvInduCode', 'indvInduName', 'lastEmRatingName', 'lastEmRatingValue', 'emRatingValue',
-                 'emRatingName', 'ratingChange', 'researcher', 'encodeUrl', 'count']
-        insert_tuple = []
-        for obj in data_list:
-            insert_tuple.append((obj['title'], obj['stockName'], obj['stockCode'], obj['orgCode'], obj['orgName'], obj['orgSName'], obj['publishDate'], obj['predictNextTwoYearEps'], obj['predictNextTwoYearPe'], obj['predictNextYearEps'], obj['predictNextYearPe'], obj['predictThisYearEps'], obj['predictThisYearPe'], obj['indvInduCode'], obj['indvInduName'], obj['lastEmRatingName'], obj['lastEmRatingValue'], obj['emRatingValue'],obj['emRatingName'], obj['ratingChange'], obj['researcher'], obj['encodeUrl'], obj['count']))
-        values_sql = ['%s' for v in attrs]
-        attrs_sql = '('+','.join(attrs)+')'
-        values_sql = ' values('+','.join(values_sql)+')'
-        sql = 'insert into %s' % 'report'
-        sql = sql + attrs_sql + values_sql
-
-        self.db.add_batch(sql, insert_tuple)
-
 
 
 if __name__ == "__main__":
