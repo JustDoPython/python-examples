@@ -8,6 +8,9 @@ Python技术 公众号文章代码库
 ![](http://favorites.ren/assets/images/python.jpg)
 
 ## 实例代码
+opencv_img
+
+[惊艳！利用 Python 图像处理绘制专属头像](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/opencv_img) 惊艳！利用 Python 图像处理绘制专属头像
 
 [七夕不懂浪漫？Python 帮你制造惊喜！！！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/qixi) 七夕不懂浪漫？Python 帮你制造惊喜！！！
 
