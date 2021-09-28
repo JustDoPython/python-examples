@@ -26,4 +26,4 @@ def crc32(file_path):
             hash = zlib.crc32(s, hash)
         return "%08X" % (hash & 0xFFFFFFFF)
 
-scanning_floder("D:\personal\新建文件夹/**/*")    
+scanning_floder(r"C:\Users\xxxx\Documents\WeChat Files\xxx\FileStorage\**\*")    
