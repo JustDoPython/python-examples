@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[Python异常还能写得如此优雅！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/retry)：Python异常还能写得如此优雅！
+
 [神器 Spider！几分钟入门分布式爬虫！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/disspider)：神器 Spider！几分钟入门分布式爬虫！
 
 [神器！五分钟完成大型爬虫项目！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/airspider)：神器！五分钟完成大型爬虫项目！
