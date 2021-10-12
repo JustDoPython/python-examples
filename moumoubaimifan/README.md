@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[绝了! 2 行代码可以加水印、文件对比以及利好抓包](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/filestools)
+
 [微信缓存重复文件删除](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/remove)
 
 [中秋不发女朋友，发追女神的方法](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/weibo.py)
