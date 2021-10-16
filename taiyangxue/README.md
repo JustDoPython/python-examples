@@ -1,5 +1,6 @@
 # Python 代码实例
 
+- [split-video](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/split-video) : 神器 ffmpeg —— 实现短视频批量化操作
 - [pypandoc](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pypandoc) : 神器 Pypandoc —— 实现电子书自由
 - [python-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-thread) : 这么一搞，再也不怕线程打架了
 - [python-op2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op2) : 只需一招，Python 将系统秒变在线版！
