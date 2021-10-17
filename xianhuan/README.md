@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[知乎热门：如何提高爬虫速度？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/spiderspeed)：知乎热门：如何提高爬虫速度？
+
 [Python异常还能写得如此优雅！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/retry)：Python异常还能写得如此优雅！
 
 [神器 Spider！几分钟入门分布式爬虫！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/disspider)：神器 Spider！几分钟入门分布式爬虫！
