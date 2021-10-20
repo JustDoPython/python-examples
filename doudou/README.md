@@ -8,6 +8,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[涨姿势｜看我如何用 Python 哄女朋友开心](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-10-21-pig)
+
 [付费？不存在的，20 行代码将电子书转换为有声小说](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-09-29-pdf-to-mp3)
 
 [神器 ｜ 一键下载海量高清壁纸](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-09-28-wallpaper)
