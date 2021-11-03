@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[丢弃Tkinter，这款GUI神器值得拥有！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/gooey)：丢弃Tkinter，这款GUI神器值得拥有！
+
 [知乎热门：如何提高爬虫速度？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/spiderspeed)：知乎热门：如何提高爬虫速度？
 
 [Python异常还能写得如此优雅！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/retry)：Python异常还能写得如此优雅！
