@@ -1,5 +1,6 @@
 # Python 代码实例
 
+- [fake-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/fake-thread) : Python 多线程居然是 —— 假的？
 - [logging-train](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/logging-train) : 神器 logging，你真的了解吗？
 - [split-video](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/split-video) : 神器 ffmpeg —— 实现短视频批量化操作
 - [pypandoc](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pypandoc) : 神器 Pypandoc —— 实现电子书自由
