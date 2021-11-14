@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[用Python来做一个屏幕录制工具](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/videorecord)：用Python来做一个屏幕录制工具
+
 [肝了三天三夜，一文道尽Python的xpath解析！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/xpath)：肝了三天三夜，一文道尽Python的xpath解析！
 
 [丢弃Tkinter，这款GUI神器值得拥有！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/gooey)：丢弃Tkinter，这款GUI神器值得拥有！
