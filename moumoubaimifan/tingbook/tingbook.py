@@ -41,7 +41,7 @@ def get_key(url):
 
 if __name__ == "__main__":
     url = input("请输入浏览器书页的地址：")
-    dir,url_list = get_detail_urls()
+    dir,url_list = get_detail_urls(url)
 
     for item in url_list:
         audio_url = get_mp3_path(item['url'])
