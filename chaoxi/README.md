@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[神器-可视化分析之Basemap实战详解（二）](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/BaseMap) 神器-可视化分析之Basemap实战详解（二）
+
 [用 Python 给小表弟画皮卡丘！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/pkq) 用 Python 给小表弟画皮卡丘！
 
 [惊艳！利用 Python 图像处理绘制专属头像](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/opencv_img) 惊艳！利用 Python 图像处理绘制专属头像
