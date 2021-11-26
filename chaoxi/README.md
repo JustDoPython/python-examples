@@ -7,7 +7,9 @@ Python技术 公众号文章代码库
 
 ![](http://favorites.ren/assets/images/python.jpg)
 
-## 实例代码
+## 实例代码 
+
+[神器 Pandas 绘图大全(上)！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Pandas1) 神器 Pandas 绘图大全(上)！
 
 [神器-可视化分析之Basemap实战详解（二）](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/BaseMap) 神器-可视化分析之Basemap实战详解（二）
 
