@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[又是入刑的一天！抓取 jk 小姐姐图片](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/jk)
+
 [我不做韭菜！用 python 分析基金中的股票信息](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/stock.py)
 
 [python 抓取阿里云盘资源](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/aliso)
