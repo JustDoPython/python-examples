@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[用 pyton 助力斗图，做本群最靓的仔](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/doutu)
+
 [不熬夜、不修仙，B 站升级脚本](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/bilibili/upgrade.py)
 
 [又是入刑的一天！抓取 jk 小姐姐图片](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/jk)
