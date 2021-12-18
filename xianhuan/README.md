@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[不用P图！用Python给头像加圣诞帽并制作成可执行软件！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/christmashat)：不用P图！用Python给头像加圣诞帽并制作成可执行软件！
+
 [嘿嘿！几行代码秒出美女素描图！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pencilimg)：嘿嘿！几行代码秒出美女素描图！
 
 [几行代码就能实现漂亮进度条，太赞了！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/tqdm)：几行代码就能实现漂亮进度条，太赞了！
