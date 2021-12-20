@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[随着身体的一阵抖动，python 下载的抖音小姐姐都没味了](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/douyin)
+
 [用 python 助力斗图，做本群最靓的仔](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/doutu)
 
 [不熬夜、不修仙，B 站升级脚本](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/bilibili/upgrade.py)
