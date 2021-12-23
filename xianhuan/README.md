@@ -3,12 +3,14 @@
 Python技术 公众号文章代码库
 
 
-关注公众号：python 技术，回复"python"一起学习交流
+关注公众号：python技术，回复"python"一起学习交流
 
 ![](http://favorites.ren/assets/images/python.jpg)
 
 
 ## 实例代码
+
+[不买礼物，准备给她画一棵精美圣诞树！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/christmastree)：不买礼物，准备给她画一棵精美圣诞树！
 
 [不用P图！用Python给头像加圣诞帽并制作成可执行软件！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/christmashat)：不用P图！用Python给头像加圣诞帽并制作成可执行软件！
 
