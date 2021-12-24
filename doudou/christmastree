@@ -1,1 +1,743 @@
+## 雪花圣诞树
 
+```python
+import turtle as t  #as就是取个别名，后续调用的t都是turtle
+from turtle import *
+import random as r
+import time
+ 
+ 
+ 
+n = 100.0
+ 
+speed("fastest")  #定义速度
+screensize(bg='black')  #定义背景颜色，可以自己换颜色
+left(90)
+forward(3*n)
+color("orange", "yellow")#定义最上端星星的颜色，外圈是orange，内部是yellow
+begin_fill()
+left(126)
+ 
+for i in range(5): #画五角星
+    forward(n/5)
+    right(144)    #五角星的角度
+    forward(n/5)
+    left(72)    #继续换角度
+end_fill()
+right(126)
+ 
+def drawlight():#定义画彩灯的方法
+    if r.randint(0, 30) == 0:#如果觉得彩灯太多，可以把取值范围加大一些，对应的灯就会少一些
+        color('tomato')#定义第一种颜色
+        circle(6)#定义彩灯大小
+    elif r.randint(0,30) == 1:
+        color('orange')#定义第二种颜色
+        circle(3)#定义彩灯大小
+    else:
+        color('dark green')#其余的随机数情况下画空的树枝
+ 
+ 
+color("dark green")#定义树枝的颜色
+backward(n*4.8)
+def tree(d, s):#开始画树
+    if d <= 0: return
+    forward(s)
+    tree(d-1, s*.8)
+    right(120)
+    tree(d-3, s*.5)
+    drawlight()#同时调用小彩灯的方法
+    right(120)
+    tree(d-3, s*.5)
+    right(120)
+    backward(s)
+tree(15, n)
+backward(n/2)
+ 
+for i in range(200):#循环画最底端的小装饰
+    a = 200 - 400 * r.random()
+    b = 10 - 20 * r.random()
+    up()
+    forward(b)
+    left(90)
+    forward(a)
+    down()
+    if r.randint(0, 1) == 0:
+            color('tomato')
+    else:
+        color('wheat')
+    circle(2)
+    up()
+    backward(a)
+    right(90)
+    backward(b)
+ 
+t.color("dark red","red")#定义字体颜色
+t.write("Merry Christmas",align ="center",font=("Comic Sans MS",40,"bold"))#定义文字、位置、字体、大小
+ 
+ 
+def drawsnow():#定义画雪花的方法
+    t.ht()  #隐藏笔头，ht=hideturtle
+    t.pensize(2)  #定义笔头大小
+    for i in range(200): #画多少雪花
+        t.pencolor("white") #定义画笔颜色为白色，其实就是雪花为白色
+        t.pu() #提笔，pu=penup
+        t.setx(r.randint(-350,350)) #定义x坐标，随机从-350到350之间选择
+        t.sety(r.randint(-100,350)) #定义y坐标，注意雪花一般在地上不会落下，所以不会从太小的纵座轴开始
+        t.pd() #落笔，pd=pendown
+        dens = 6 #雪花瓣数设为6
+        snowsize = r.randint(1,10) #定义雪花大小
+        for j in range(dens): #就是6，那就是画5次，也就是一个雪花五角星
+            #t.forward(int(snowsize))  #int（）取整数
+            t.fd(int(snowsize))
+            t.backward(int(snowsize))
+            #t.bd(int(snowsize))  #注意没有bd=backward，但有fd=forward，小bug
+            t.right(int(360/dens))  #转动角度
+ 
+drawsnow()#调用画雪花的方法
+t.done()  # 完成,否则会直接关闭
+```
+
+## 像素圣诞树
+
+```python
+import turtle
+screen = turtle.Screen()
+screen.setup(375, 700)
+circle = turtle.Turtle()
+circle.shape('circle')
+circle.color('red')
+circle.speed('fastest')
+circle.up()
+square = turtle.Turtle()
+square.shape('square')
+square.color('green')
+square.speed('fastest')
+square.up()
+circle.goto(0, 280)
+circle.stamp()
+k = 0
+for i in range(1, 13):
+    y = 30 * i
+    for j in range(i - k):
+        x = 30 * j
+        square.goto(x, -y + 280)
+        square.stamp()
+        square.goto(-x, -y + 280)
+        square.stamp()
+if i % 4 == 0:
+    x = 30 * (j + 1)
+    circle.color('red')
+    circle.goto(-x, -y + 280)
+    circle.stamp()
+    circle.goto(x, -y + 280)
+    circle.stamp()
+    k += 3
+if i % 4 == 3:
+    x = 30 * (j + 1)
+    circle.color('yellow')
+    circle.goto(-x, -y + 280)
+    circle.stamp()
+    circle.goto(x, -y + 280)
+    circle.stamp()
+square.color('brown')
+for i in range(13, 17):
+    y = 30 * i
+    for j in range(2):
+        x = 30 * j
+        square.goto(x, -y + 280)
+        square.stamp()
+        square.goto(-x, -y + 280)
+        square.stamp()
+
+```
+
+## 手绘圣诞树
+
+```python
+from turtle import *
+import time
+
+setup(500, 500, startx=None, starty=None)
+speed(0)
+pencolor("pink")
+pensize(10)
+penup()
+hideturtle()
+goto(0, 150)
+showturtle()
+pendown()
+shape(name="classic")
+# 1
+seth(-120)
+for i in range(10):
+    fd(12)
+    right(2)
+penup()
+goto(0, 150)
+seth(-60)
+pendown()
+for i in range(10):
+    fd(12)
+    left(2)
+seth(-150)
+penup()
+fd(10)
+pendown()
+for i in range(5):
+    fd(10)
+    right(15)
+seth(-150)
+penup()
+fd(8)
+pendown()
+for i in range(5):
+    fd(10)
+    right(15)
+seth(-155)
+penup()
+fd(5)
+pendown()
+for i in range(5):
+    fd(7)
+    right(15)
+# 2
+penup()
+goto(-55, 34)
+pendown()
+seth(-120)
+for i in range(10):
+    fd(8)
+    right(5)
+
+penup()
+goto(50, 35)
+seth(-60)
+pendown()
+for i in range(10):
+    fd(8)
+    left(5)
+seth(-120)
+penup()
+fd(10)
+seth(-145)
+pendown()
+for i in range(5):
+    fd(10)
+    right(15)
+penup()
+fd(10)
+seth(-145)
+pendown()
+for i in range(5):
+    fd(12)
+    right(15)
+penup()
+fd(8)
+seth(-145)
+pendown()
+for i in range(5):
+    fd(10)
+    right(15)
+penup()
+seth(-155)
+fd(8)
+pendown()
+for i in range(5):
+    fd(11)
+    right(15)
+# 3
+penup()
+goto(-100, -40)
+seth(-120)
+pendown()
+for i in range(10):
+    fd(6)
+    right(3)
+penup()
+goto(80, -39)
+seth(-50)
+pendown()
+for i in range(10):
+    fd(6)
+    left(3)
+seth(-155)
+penup()
+fd(10)
+pendown()
+for i in range(5):
+    fd(8)
+    right(10)
+penup()
+fd(8)
+seth(-145)
+pendown()
+for i in range(7):
+    fd(8)
+    right(10)
+penup()
+fd(8)
+seth(-145)
+pendown()
+for i in range(7):
+    fd(7)
+    right(10)
+penup()
+fd(8)
+seth(-145)
+pendown()
+for i in range(7):
+    fd(7)
+    right(10)
+penup()
+fd(8)
+seth(-140)
+pendown()
+for i in range(7):
+    fd(6)
+    right(10)
+
+# 4
+penup()
+goto(-120, -95)
+seth(-130)
+pendown()
+for i in range(7):
+    fd(10)
+    right(5)
+penup()
+goto(100, -95)
+seth(-50)
+pendown()
+for i in range(7):
+    fd(10)
+    left(5)
+penup()
+seth(-120)
+fd(10)
+seth(-155)
+pendown()
+for i in range(6):
+    fd(8)
+    right(10)
+penup()
+seth(-160)
+fd(10)
+seth(-155)
+pendown()
+for i in range(6):
+    fd(8)
+    right(10)
+penup()
+seth(-160)
+fd(10)
+seth(-155)
+pendown()
+for i in range(6):
+    fd(8)
+    right(10)
+penup()
+seth(-160)
+fd(10)
+seth(-160)
+pendown()
+for i in range(6):
+    fd(8)
+    right(10)
+penup()
+seth(-160)
+fd(10)
+seth(-160)
+pendown()
+for i in range(6):
+    fd(8)
+    right(10)
+penup()
+seth(-160)
+fd(10)
+seth(-165)
+pendown()
+for i in range(5):
+    fd(10)
+    right(11)
+# 5
+penup()
+goto(-70, -165)
+seth(-85)
+pendown()
+for i in range(3):
+    fd(5)
+    left(3)
+penup()
+goto(70, -165)
+seth(-95)
+pendown()
+for i in range(3):
+    fd(5)
+    right(3)
+seth(-170)
+penup()
+fd(10)
+pendown()
+pendown()
+for i in range(10):
+    fd(12)
+    right(2)
+# 6
+penup()
+goto(70, -165)
+pendown()
+seth(-90)
+pensize(8)
+pencolor("#de8891")
+circle(-20, 90)
+
+penup()
+goto(30, -185)
+pendown()
+seth(-180)
+pensize(8)
+pencolor("#de8891")
+fd(40)
+
+penup()
+goto(-5, -170)
+pendown()
+seth(-180)
+pensize(8)
+pencolor("#de8891")
+fd(35)
+
+
+def guest(x, y, z):
+    penup()
+    goto(x, y)
+    seth(-z)
+    pendown()
+    for angel in range(5):
+        fd(10)
+        right(10)
+
+
+def guet(x, y, z):
+    penup()
+    goto(x, y)
+    seth(-z)
+    pendown()
+    for angel in range(5):
+        fd(10)
+        left(10)
+
+
+def qu(x, y, z):
+    penup()
+    goto(x, y)
+    seth(-z)
+    pendown()
+    for angel in range(5):
+        fd(6)
+        right(10)
+    seth(-150)
+    fd(20)
+
+
+# 树枝
+guest(-70, -150, 160)
+guest(100, -150, 160)
+guet(110, -110, 50)
+guest(160, -140, 150)
+qu(80, -120, 180)
+guest(70, -85, 165)
+guest(-40, -85, 165)
+guet(90, -50, 50)
+guest(130, -80, 150)
+pencolor("pink")
+qu(-40, -60, 180)
+pencolor('#de8891')
+qu(80, -30, 180)
+pencolor("pink")
+qu(40, 10, 180)
+pencolor("#de8891")
+guest(-60, 30, 120)
+guest(-20, -20, 150)
+guet(45, 40, 60)
+guest(-30, 40, 170)
+guest(-30, 110, 115)
+guet(40, 90, 60)
+guest(80, 50, 160)
+pencolor("#de8891")
+
+
+def hdj(x, y):
+    penup()
+    goto(x, y)
+    seth(80)
+    pendown()
+    pensize(2)
+    circle(5)
+    seth(10)
+    fd(15)
+    seth(120)
+    fd(20)
+    seth(240)
+    fd(20)
+    seth(180)
+    fd(20)
+    seth(-60)
+    fd(20)
+    seth(50)
+    fd(20)
+    seth(-40)
+    fd(30)
+    seth(-130)
+    fd(5)
+    seth(135)
+    fd(30)
+    seth(-60)
+    fd(30)
+    seth(-150)
+    fd(6)
+    seth(110)
+    fd(30)
+
+
+def uit(x, y):
+    penup()
+    goto(x, y)
+    pendown()
+    pensize(2)
+    circle(5)
+    seth(-10)
+    fd(15)
+    seth(90)
+    fd(15)
+    seth(200)
+    fd(15)
+    seth(160)
+    fd(15)
+    seth(-90)
+    fd(15)
+    seth(10)
+    fd(15)
+    seth(-60)
+    fd(20)
+    seth(-180)
+    fd(5)
+    seth(110)
+    fd(20)
+    seth(-90)
+    fd(20)
+    seth(-180)
+    fd(6)
+    seth(70)
+    fd(15)
+    hideturtle()
+
+
+def yut(x, y, z):
+    penup()
+    goto(x, y)
+    pendown()
+    seth(z)
+    for po in range(5):
+        fd(4)
+        left(36)
+
+
+def ytu(x, y, z):
+    penup()
+    goto(x, y)
+    pendown()
+    seth(z)
+    for kk in range(5):
+        fd(4)
+        left(36)
+
+
+# 小蝴蝶结
+seth(0)
+uit(40, -160)
+hdj(-80, -120)
+yut(-67, -115, 120)
+yut(-86, -123, 150)
+hdj(40, -50)
+yut(52, -45, 130)
+yut(34, -55, 160)
+seth(0)
+uit(-20, -60)
+ytu(-4, -60, 100)
+ytu(-20, -60, 120)
+hdj(-30, 20)
+yut(-15, 25, 130)
+yut(-40, 20, 180)
+uit(30, 70)
+ytu(45, 70, 100)
+ytu(30, 70, 120)
+
+# 大蝴蝶结
+pencolor("#f799e6")
+pensize(5)
+penup()
+seth(0)
+goto(0, 150)
+pendown()
+circle(10)
+seth(-15)
+fd(40)
+seth(90)
+fd(40)
+seth(200)
+fd(40)
+seth(160)
+fd(40)
+seth(-90)
+fd(40)
+seth(15)
+fd(40)
+seth(-70)
+pencolor("#f799e6")
+pensize(4)
+fd(40)
+seth(-180)
+fd(10)
+seth(100)
+fd(40)
+seth(-100)
+fd(40)
+seth(-180)
+fd(10)
+seth(70)
+fd(40)
+penup()
+seth(0)
+goto(0, 130)
+pencolor("pink")
+pendown()
+
+
+def iou(x, y, z):
+    penup()
+    goto(x, y)
+    pencolor("#f799e6")
+    pendown()
+    seth(z)
+    for po in range(10):
+        fd(4)
+        left(18)
+
+
+seth(0)
+iou(35, 145, 100)
+iou(-7, 145, 110)
+pencolor("red")
+pensize(7)
+penup()
+goto(-35, 135)
+pendown()
+
+# 圣诞帽
+seth(-20)
+pensize(2)
+penup()
+goto(-30, -120)
+pencolor("black")
+pendown()
+fillcolor("red")
+fd(30)
+circle(4, 180)
+fd(30)
+circle(4, 180)
+penup()
+goto(-25, -115)
+seth(75)
+pendown()
+begin_fill()
+for i in range(5):
+    fd(6)
+    right(20)
+seth(-10)
+for i in range(5):
+    fd(8)
+    right(15)
+seth(145)
+for i in range(5):
+    fd(5)
+    left(2)
+seth(90)
+for i in range(5):
+    fd(1)
+    left(2)
+seth(-90)
+for i in range(4):
+    fd(4)
+    right(6)
+seth(161)
+fd(30)
+end_fill()
+pensize(1)
+pencolor("black")
+
+
+def koc(x, y, size):
+    pensize(2)
+    pencolor("black")
+    penup()
+    goto(x, y)
+    pendown()
+    begin_fill()
+    fillcolor("yellow")
+    for i in range(5):
+        left(72)
+        fd(size)
+        right(144)
+        fd(size)
+    end_fill()
+
+
+# 星星
+seth(-15)
+koc(-120, -70, 10)
+seth(10)
+koc(100, -20, 10)
+seth(-10)
+koc(10, 40, 10)
+seth(30)
+koc(-80, 60, 10)
+koc(100, -150, 10)
+koc(-140, -150, 10)
+koc(20, 120, 10)
+
+# 袜子
+seth(-20)
+pensize(2)
+penup()
+goto(-20, 80)
+pencolor("black")
+pendown()
+fillcolor("red")
+fd(25)
+circle(4, 180)
+fd(25)
+circle(4, 180)
+penup()
+goto(-15, 80)
+pendown()
+begin_fill()
+fillcolor("red")
+seth(-120)
+fd(20)
+seth(150)
+fd(5)
+circle(7, 180)
+fd(15)
+circle(5, 90)
+fd(30)
+seth(160)
+fd(18)
+end_fill()
+penup()
+seth(0)
+goto(100, -230)
+pendown()
+write("Merry Christmas", align="right", font=("方正黄草简体", 24, "bold"))
+done()
+```
