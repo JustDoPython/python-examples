@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码 
 
+[方便！Python 操作 Excel 神器 xlsxwriter 初识！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/xlsxwriter) 方便！Python 操作 Excel 神器 xlsxwriter 初识！
+
 [神器 Pandas 绘图大全(上)！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Pandas2) 神器 Pandas 绘图大全(中)！
 
 [神器 Pandas 绘图大全(上)！](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Pandas1) 神器 Pandas 绘图大全(上)！
