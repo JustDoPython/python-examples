@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[一行代码干掉 debug 和 print，助力算法学习](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/pysnooper)
+
 [随着身体的一阵抖动，python 下载的抖音小姐姐都没味了](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/douyin)
 
 [用 python 助力斗图，做本群最靓的仔](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/doutu)
