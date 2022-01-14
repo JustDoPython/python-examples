@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[在图片和 PDF 上去掉水印](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/removeWatermark)
+
 [一行代码干掉 debug 和 print，助力算法学习](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/pysnooper)
 
 [随着身体的一阵抖动，python 下载的抖音小姐姐都没味了](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/douyin)
