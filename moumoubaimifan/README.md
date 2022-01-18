@@ -7,8 +7,9 @@ Python技术 公众号文章代码库
 
 ![](http://favorites.ren/assets/images/python.jpg)
 
-
 ## 实例代码
+
+[用协程的方式下载英雄联盟的高清皮肤](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/lol)
 
 [在图片和 PDF 上去掉水印](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/removeWatermark)
 
