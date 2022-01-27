@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[煎蛋网全站妹子图爬虫](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/jandan.py)
+
 [自动录制 python 脚本的爬虫利器 Playwright！](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/playwright)
 
 [用协程的方式下载英雄联盟的高清皮肤](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/lol)
