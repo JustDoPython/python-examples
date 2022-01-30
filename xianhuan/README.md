@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[Python写春联，瑞雪兆丰年！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/couplets)： Python写春联，瑞雪兆丰年！
+
 [回顾2021！爬取12万数据盘点热门大事件！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/weibohot)：回顾2021！爬取12万数据盘点热门大事件！
 
 [不买礼物，准备给她画一棵精美圣诞树！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/christmastree)：不买礼物，准备给她画一棵精美圣诞树！
