@@ -9,7 +9,7 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
-[情人节，25 行代码生成微信朋友圈的爱心九宫格。]https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/qrj/
+[情人节，25 行代码生成微信朋友圈的爱心九宫格。](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/qrj/)
 
 [20 行代码，微信头像上加冰墩墩](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/bdd/)
 
