@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[用 Python 写最简单的摸鱼监控进程，你会吗？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/monitor)：用 Python 写最简单的摸鱼监控进程，你会吗？
+
 [用Python对摩斯密码加解密！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/morse)： 用Python对摩斯密码加解密！
 
 [Python写春联，瑞雪兆丰年！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/couplets)： Python写春联，瑞雪兆丰年！
