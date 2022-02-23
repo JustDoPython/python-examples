@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[工作摸鱼，撸一个下载 B 站视频小姐姐封面偷偷看](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/b)
+
 [带带弟弟 ocr 对各种类型验证码说不](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/ddddocr/)
 
 [情人节，25 行代码生成微信朋友圈的爱心九宫格。](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/qrj/)
