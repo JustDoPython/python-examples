@@ -25,6 +25,9 @@ def main(last_id):
         for item in res_json["data"]["list"]:
             post_id = item["post"]["post_id"]
             detail(post_id)
+                
+    if res_json["data"]["last_id"] != "":
+        return main(res_json["data"]["last_id"])
 
 def detail(post_id):
     url = f"https://bbs-api.mihoyo.com/post/wapi/getPostFull?gids=5&post_id={post_id}&read=1"
@@ -47,19 +50,6 @@ def save_image(image_src):
 
 
 
-
-if __name__ == '__main__':
-    main(18136074)
-
-def main(last_id):
-    url = f"https://bbs-api.mihoyo.com/post/wapi/getForumPostList?forum_id=47&gids=5&is_good=false&last_id={last_id}&is_hot=false&page_size=20&sort_type=2"
-    res_json = request_get(url, "json")
-    if res_json["retcode"] == 0:
-        for item in res_json["data"]["list"]:
-            detail(item["post"]["post_id"])
-
-    if res_json["data"]["last_id"] != "":
-        return main(res_json["data"]["last_id"])
 
 if __name__ == '__main__':
     main(18136074)
