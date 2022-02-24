@@ -9,6 +9,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[用 Python 下载好看的米哈游 coser 小姐姐](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/cosplay)
+
 [工作摸鱼，撸一个下载 B 站视频小姐姐封面偷偷看](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/b)
 
 [带带弟弟 ocr 对各种类型验证码说不](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/ddddocr/)
