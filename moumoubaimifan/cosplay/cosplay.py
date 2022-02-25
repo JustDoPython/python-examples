@@ -19,7 +19,7 @@ def request_get(url, ret_type):
         return res.json()
 
 def main(last_id):
-    url = f"https://bbs-api.mihoyo.com/post/wapi/getForumPostList??game_id=5&gids=5&last_id={last_id}&list_type=0&page_size=20&topic_id=547"
+    url = f'https://bbs-api.mihoyo.com/post/wapi/getForumPostList?forum_id=47&gids=5&is_good=false&is_hot=false&last_id={last_id}&page_size=20&sort_type=2'
     res_json = request_get(url, "json")
     if res_json["retcode"] == 0:
         for item in res_json["data"]["list"]:
