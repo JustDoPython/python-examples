@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[几行代码迅速提取音频，YYDS！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/extractaudio)：几行代码迅速提取音频，YYDS！
+
 [一行代码，生成和读取二维码！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/qrcode)：一行代码，生成和读取二维码！
 
 [用 Python 写最简单的摸鱼监控进程，你会吗？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/monitor)：用 Python 写最简单的摸鱼监控进程，你会吗？
