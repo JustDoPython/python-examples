@@ -8,6 +8,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[视频号视频下载](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-03-23-channel)
+
 [用 Python 在 Excel 中画画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-12-31-img-excel)
 
 [一行代码搞定的事还用个锤子的 PS 啊](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-10-28-pillow)
