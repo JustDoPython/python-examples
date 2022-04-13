@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[几行代码，实现Python捕获、播放和保存摄像头视频！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/videobase)：几行代码，实现Python捕获、播放和保存摄像头视频！
+
 [几行代码迅速提取音频，YYDS！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/extractaudio)：几行代码迅速提取音频，YYDS！
 
 [一行代码，生成和读取二维码！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/qrcode)：一行代码，生成和读取二维码！
