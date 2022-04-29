@@ -8,6 +8,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[画画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-29)
+
 [ffmpeg](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-25-ffmpeg)
 
 [视频号视频下载](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-03-23-channel)
