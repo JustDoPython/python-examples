@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[人人爆吹的PyScript到底是什么？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyscript)：人人爆吹的PyScript到底是什么？
+
 [Python 增强视频画质，就这么做！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/enhancevideo)：Python 增强视频画质，就这么做！
 
 [Python美图技术也就几行代码！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/imageenhange)：Python美图技术也就几行代码！
