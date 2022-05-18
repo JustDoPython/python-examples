@@ -8,6 +8,10 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[小游戏](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-05-18-games)
+
+[520](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-05-16-turtle)
+
 [画画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-29)
 
 [ffmpeg](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-25-ffmpeg)
