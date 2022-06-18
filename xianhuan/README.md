@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[绝了！自动点赞，我用 PyAutoGUI！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyautogui2)：绝了！自动点赞，我用 PyAutoGUI！
+
 [这个自动化利器，Pythoner都在用！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pdffit)：自动化利器，Pythoner都在用！
 
 [人人爆吹的PyScript到底是什么？](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyscript)：人人爆吹的PyScript到底是什么？
