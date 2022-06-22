@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[用 Python 实现图片转字符画，so easy！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/charPic)：用 Python 实现图片转字符画，so easy！
+
 [绝了！自动点赞，我用 PyAutoGUI！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyautogui2)：绝了！自动点赞，我用 PyAutoGUI！
 
 [这个自动化利器，Pythoner都在用！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pdffit)：自动化利器，Pythoner都在用！
