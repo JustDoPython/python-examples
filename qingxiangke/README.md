@@ -13,4 +13,6 @@ Python技术 公众号文章代码库
 
 [爬虫](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/Crawler) : 用爬虫代替工作的魅力
 
-[pandas](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/PandasSift) : pandas的多条件筛选
+[pandas条件筛选](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/PandasSift) : pandas的多条件筛选
+
+[pandas的多表连接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/pandasMerge) : pandas的多表连接
