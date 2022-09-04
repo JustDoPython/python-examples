@@ -15,4 +15,6 @@ Python技术 公众号文章代码库
 
 [pandas条件筛选](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/PandasSift) : pandas的多条件筛选
 
-[pandas的多表连接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/pandasMerge) : pandas的多表连接
+[pandas的两表连接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/pandasMerge) : pandas的两表连接
+
+[pandas的多表拼接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/calculate) : pandas的多表拼接
