@@ -17,4 +17,4 @@ Python技术 公众号文章代码库
 
 [pandas的两表连接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/pandasMerge) : pandas的两表连接
 
-[pandas的多表拼接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/calculate) : pandas的多表拼接
+[pandas的多表拼接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/joint) : pandas的多表拼接
