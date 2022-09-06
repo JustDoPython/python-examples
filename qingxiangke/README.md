@@ -18,3 +18,5 @@ Python技术 公众号文章代码库
 [pandas的两表连接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/pandasMerge) : pandas的两表连接
 
 [pandas的多表拼接](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/joint) : pandas的多表拼接
+
+[echarts的可视化](https://github.com/JustDoPython/python-examples/tree/master/qingxiangke/shift) : echarts的可视化
