@@ -14,6 +14,7 @@ Python技术 公众号文章代码库
 
 [echarts的可视化](https://github.com/JustDoPython/python-examples/tree/master/fans/shift)：echarts的可视化
 
+[PyAutoGUI，轻松搞定图片上传！](https://github.com/JustDoPython/python-examples/tree/master/fans/imgupload)：PyAutoGUI，轻松搞定图片上传！
 
 
 
