@@ -22,4 +22,4 @@ root, dirs, files = next(os.walk("./test/"))
 
 for item in files:
     img_path = os.path.join(root,item)
-    process_image(img_path, "./target/")
+    modify_image(img_path, "./target/")
