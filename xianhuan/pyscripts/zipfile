@@ -1,0 +1,5 @@
+# 解压文件
+from zipfile import ZipFile
+
+unzip = ZipFile("C:\\Users\\cxhuan\\Downloads\\file_upload.zip", "r")
+unzip.extractall("C:\\Users\\cxhuan\\Downloads\\file_upload")

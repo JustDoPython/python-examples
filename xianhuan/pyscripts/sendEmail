@@ -1,0 +1,26 @@
+import smtplib 
+from email.message import EmailMessage
+import pandas as pd
+
+def send_email(remail, rsubject, rcontent):
+    email = EmailMessage()      
+    # 发件人邮箱                    
+    email['from'] = '发件人邮箱'    
+    # 收件人邮箱        
+    email['to'] = remail            
+    # 主题               
+    email['subject'] = rsubject   
+    # 内容                  
+    email.set_content(rcontent)                     
+    with smtplib.SMTP(host='smtp.qq.com',port=25)as smtp:     
+        smtp.ehlo()                                 
+        smtp.starttls()       
+        # 授权码登录                     
+        smtp.login("发件人邮箱","授权码") 
+        smtp.send_message(email)                    
+        print("email send to ",remail)              
+
+if __name__ == '__main__':
+    send_email('目标邮箱','test','test')
+
+        
