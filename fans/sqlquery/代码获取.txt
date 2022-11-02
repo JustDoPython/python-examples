@@ -1,0 +1,14 @@
+vue
+```sh
+git clone https://gitee.com/sswfit/vue-morning-shift.git
+cd vue-morning-shift
+npm install --registry=https://registry.npm.taobao.org
+npm run serve
+```
+
+django
+```sh
+git clone https://gitee.com/sswfit/morning_shift.git
+cd morning_shift
+pip install -r requirements.txt
+python manage.py runserver localhost:8887

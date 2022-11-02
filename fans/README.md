@@ -18,7 +18,7 @@ Python技术 公众号文章代码库
 
 [为了买车，我爬了懂车帝！](https://github.com/JustDoPython/python-examples/tree/master/fans/scrapydcd)：为了买车，我爬了懂车帝！
 
-
+[用Python写个工具，同时应付10个客服MM！](https://github.com/JustDoPython/python-examples/tree/master/fans/sqlquery)：用Python写个工具，同时应付10个客服MM！
 
 
 
