@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[这个神器，让你的代码运行快上100倍！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/taichi)：这个神器，让你的代码运行快上100倍！
+
 [几个有趣且有用的Python自动化脚本](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyscripts)：几个有趣且有用的Python自动化脚本
 
 [用 Python 实现图片转字符画，so easy！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/charPic)：用 Python 实现图片转字符画，so easy！
