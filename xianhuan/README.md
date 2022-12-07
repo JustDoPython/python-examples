@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[好家伙，令女神尖叫的李峋同款爱心代码来了！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/shrinkheart)：好家伙，令女神尖叫的李峋同款爱心代码来了！
+
 [这个神器，让你的代码运行快上100倍！](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/taichi)：这个神器，让你的代码运行快上100倍！
 
 [几个有趣且有用的Python自动化脚本](https://github.com/JustDoPython/python-examples/tree/master/xianhuan/pyscripts)：几个有趣且有用的Python自动化脚本
