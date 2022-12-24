@@ -10,6 +10,8 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
+[只需几分钟！用python爬取付费歌曲！](https://github.com/JustDoPython/python-examples/tree/master/fans/scrapymusic)：只需几分钟！用python爬取付费歌曲！
+
 [高效办公，pandas美化表格实例演示](https://github.com/JustDoPython/python-examples/tree/master/fans/beautyPandas)：高效办公，pandas美化表格实例演示
 
 [echarts的可视化](https://github.com/JustDoPython/python-examples/tree/master/fans/shift)：echarts的可视化
