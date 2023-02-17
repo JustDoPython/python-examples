@@ -38,9 +38,6 @@ Python技术 公众号文章代码库
 [Python 5 行代码的神奇操作](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/five_code):Python 5 行代码的神奇操作
 
 
-
-[肺炎数据抓取并展示](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/feiyan_data) ：肺炎数据抓取并展示
-
 [Python 樱花小技](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/cherry_tree) ：Python 樱花小技
 
 [Python Jupyter notebook 操作](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/jupyter_notebook) ：Python Jupyter notebook 操作

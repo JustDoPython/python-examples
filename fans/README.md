@@ -10,7 +10,6 @@ Python技术 公众号文章代码库
 
 ## 实例代码
 
-[只需几分钟！用python爬取付费歌曲！](https://github.com/JustDoPython/python-examples/tree/master/fans/scrapymusic)：只需几分钟！用python爬取付费歌曲！
 
 [高效办公，pandas美化表格实例演示](https://github.com/JustDoPython/python-examples/tree/master/fans/beautyPandas)：高效办公，pandas美化表格实例演示
 
@@ -18,7 +17,6 @@ Python技术 公众号文章代码库
 
 [PyAutoGUI，轻松搞定图片上传！](https://github.com/JustDoPython/python-examples/tree/master/fans/imgupload)：PyAutoGUI，轻松搞定图片上传！
 
-[为了买车，我爬了懂车帝！](https://github.com/JustDoPython/python-examples/tree/master/fans/scrapydcd)：为了买车，我爬了懂车帝！
 
 [用Python写个工具，同时应付10个客服MM！](https://github.com/JustDoPython/python-examples/tree/master/fans/sqlquery)：用Python写个工具，同时应付10个客服MM！
 

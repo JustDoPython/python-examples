@@ -17,7 +17,6 @@
 - [busclock](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/busclock) : 公交闹钟 ———— 再也不用白等车了
 - [diffusionsimulator](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/diffusionsimulator) : python 告诉你疫情多可怕
 - [simplenumpy](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simplenumpy) : 干掉公式 —— numpy 就要这样学
-- [university](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/university) : 大学大比拼
 - [resize](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/resize) : 老板让很快处理数百图片，我该辞职吗
 - [regularinvest](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/regular_invest) : 定投改变命运？python 帮你解答
 - [sandman2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/sandman2) : 不用一行代码，用 API 操作数据库，你信吗
@@ -27,7 +26,6 @@
 - [matrix](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/matrix) : Python 世界的黑客帝国
 - [why](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/why) : 练那么多，为啥还不会编程
 - [rate](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/rate-of-return) : 做时间的朋友，必须知道收益咋算
-- [blockchain](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/blockchain) : 比特币涨疯了，区块链是什么鬼？
 - [simple game](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simple-game) : 与其说教，不如一起写个游戏
 
 ---
