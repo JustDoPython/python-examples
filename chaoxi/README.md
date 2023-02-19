@@ -54,7 +54,6 @@ Python技术 公众号文章代码库
 
 [Python 排序了解一下？](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/python_sort) ：Python 排序了解一下？
 
-[Python 小技能之抓取天气信息发送给小姐姐](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/send_weather) ：Python 小技能之抓取天气信息发送给小姐姐      
 
 [xlwings-能让 Excel 飞上天](https://github.com/JustDoPython/python-examples/tree/master/chaoxi/Python_xlwings)：xlwings-能让 Excel 飞上天
 

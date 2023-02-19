@@ -14,7 +14,6 @@ Python技术 公众号文章代码库
 
 [画画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-29)
 
-[ffmpeg](https://github.com/JustDoPython/python-examples/tree/master/doudou/2022-04-25-ffmpeg)
 
 [用 Python 在 Excel 中画画](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-12-31-img-excel)
 
@@ -27,7 +26,6 @@ Python技术 公众号文章代码库
 
 [吊炸天！十行代码我把情书藏进了小姐姐的微信头像里](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-09-08-text-img)
 
-[解放双手，提高生产力，看我如何用 Python 实现自动化剪视频](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-06-30-pyautogui)
 
 [谁说程序员不懂浪漫，当代码遇到文学...](https://github.com/JustDoPython/python-examples/tree/master/doudou/2021-03-09-programmer-romance)
 

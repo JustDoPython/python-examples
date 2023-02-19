@@ -5,11 +5,9 @@
 - [meta](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/meta) : 几行代码，撸了个 元宇宙？！
 - [fake-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/fake-thread) : Python 多线程居然是 —— 假的？
 - [logging-train](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/logging-train) : 神器 logging，你真的了解吗？
-- [split-video](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/split-video) : 神器 ffmpeg —— 实现短视频批量化操作
 - [pypandoc](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pypandoc) : 神器 Pypandoc —— 实现电子书自由
 - [python-thread](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-thread) : 这么一搞，再也不怕线程打架了
 - [python-op2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op2) : 只需一招，Python 将系统秒变在线版！
-- [python-op](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/python-op) : YYDS! Python 帮我扛起运营大旗！
 - [timefriend](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/timefriend) ：做时间的朋友 —— 用印象笔记打造时间记录工具
 - [pythondocx](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythondocx) ：Word 神器 python-docx
 - [pythonexcel](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/pythonxlsx) ：Excel 神器 OpenPyXl
@@ -18,7 +16,6 @@
 - [diffusionsimulator](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/diffusionsimulator) : python 告诉你疫情多可怕
 - [simplenumpy](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/simplenumpy) : 干掉公式 —— numpy 就要这样学
 - [resize](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/resize) : 老板让很快处理数百图片，我该辞职吗
-- [regularinvest](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/regular_invest) : 定投改变命运？python 帮你解答
 - [sandman2](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/sandman2) : 不用一行代码，用 API 操作数据库，你信吗
 - [showdata](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/showdata) : Flask + echarts 轻松搞定 nginx 日志可视化
 - [dice](https://github.com/JustDoPython/python-examples/tree/master/taiyangxue/dice) : 做硬核老爸，我用 Python

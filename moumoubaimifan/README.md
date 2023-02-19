@@ -10,12 +10,9 @@ Python技术 公众号文章代码库
 ## 实例代码
 
 
-[带带弟弟 ocr 对各种类型验证码说不](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/ddddocr/)
 
 [情人节，25 行代码生成微信朋友圈的爱心九宫格。](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/qrj/)
 
-
-[自动录制 python 脚本的爬虫利器 Playwright！](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/playwright)
 
 
 [在图片和 PDF 上去掉水印](https://github.com/JustDoPython/python-examples/blob/master/moumoubaimifan/removeWatermark)
@@ -27,13 +24,10 @@ Python技术 公众号文章代码库
 
 [小游戏：换脸术](https://github.com/JustDoPython/python-100-day/tree/master/FusionFace)
 
-[使用 FFmpeg 编辑视频](https://github.com/JustDoPython/python-100-day/tree/master/ffmpeg)
 
 [不到100行代码制作各种证件照](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/background)
 
 [Psutil + Flask + Pyecharts + Bootstrap 开发动态可视化系统监控](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/psutil-flask)
-
-[当语音助手遇到机器人](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/siri)
 
 [当语音助手遇到机器人](https://github.com/JustDoPython/python-examples/tree/master/moumoubaimifan/siri)
 
