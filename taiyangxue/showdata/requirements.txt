@@ -6,7 +6,7 @@ idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-numpy==1.19.1
+numpy==1.22.0
 pandas==1.1.1
 python-dateutil==2.8.1
 pytz==2020.1
