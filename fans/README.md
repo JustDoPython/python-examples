@@ -11,6 +11,9 @@ Python技术 公众号文章代码库
 ## 实例代码
 
 
+
+[美女同事又找我帮忙了，激动！](https://github.com/JustDoPython/python-examples/tree/master/fans/filenaming)：美女同事又找我帮忙了，激动！
+
 [高效办公，pandas美化表格实例演示](https://github.com/JustDoPython/python-examples/tree/master/fans/beautyPandas)：高效办公，pandas美化表格实例演示
 
 [echarts的可视化](https://github.com/JustDoPython/python-examples/tree/master/fans/shift)：echarts的可视化
