@@ -14,4 +14,4 @@ pyinstaller-hooks-contrib==2021.5
 pythonnet==2.5.2
 pywebview==3.5
 pywin32-ctypes==0.2.0
-Werkzeug==2.0.2
+Werkzeug==2.2.3
